@@ -1,0 +1,82 @@
+{
+  "taskId": 50,
+  "name": "[Task] Add date of birth field in user registration page",
+  "createdOn": "2025-10-27T15:10:37.000Z",
+  "updatedOn": "2025-10-27T15:10:52.000Z",
+  "allAssignees": [
+    "PrasanKumar93"
+  ],
+  "assignee": "PrasanKumar93",
+  "description": "Add date of birth field in user registration page ",
+  "taskStatus": "TODO",
+  "taskCategory": "",
+  "priority": "",
+  "llmTaskExplanation": "Add a 'date of birth' field to the user registration page. This involves updating the user registration form component to include a new input field for the date of birth. Ensure that the field is properly validated and integrated with the existing form submission logic.",
+  "validations": [
+    "The date of birth field should accept valid date formats (e.g., YYYY-MM-DD).",
+    "The date of birth should not be a future date.",
+    "The user should be at least 18 years old.",
+    "The field should be required and not allow empty submissions."
+  ],
+  "unitTests": [
+    "Test that the form renders with the date of birth field.",
+    "Test that submitting the form with a valid date of birth succeeds.",
+    "Test that submitting the form with a future date of birth fails.",
+    "Test that submitting the form with a date of birth indicating the user is under 18 fails.",
+    "Test that submitting the form with an empty date of birth field fails."
+  ],
+  "acceptanceCriteria": [
+    "Given a user on the registration page, when they view the form, then they should see a date of birth field.",
+    "Given a user enters a valid date of birth, when they submit the form, then the registration should succeed.",
+    "Given a user enters a future date of birth, when they submit the form, then they should see an error message.",
+    "Given a user enters a date of birth indicating they are under 18, when they submit the form, then they should see an error message.",
+    "Given a user leaves the date of birth field empty, when they submit the form, then they should see an error message."
+  ],
+  "technicalDependencies": [
+    "Use existing form validation libraries or utilities if available in the project."
+  ],
+  "security": [
+    "Ensure the date of birth input is sanitized to prevent injection attacks.",
+    "Validate the date of birth on the server-side as well to ensure data integrity."
+  ],
+  "performance": [
+    "Ensure the addition of the date of birth field does not significantly impact form load times."
+  ],
+  "businessContext": "The date of birth is required to ensure users meet age requirements for registration.",
+  "otherNotes": "Consider adding a tooltip or help text to guide users on the correct date format.",
+  "llmAssumptions": [
+    {
+      "assumption": "The project uses a standard web technology stack (e.g., HTML, CSS, JavaScript)."
+    },
+    {
+      "assumption": "The user registration form is part of a web application."
+    },
+    {
+      "assumption": "There is an existing form validation mechanism in place."
+    }
+  ],
+  "llmOpenQuestions": [
+    {
+      "question": "What is the current tech stack used in the project?"
+    },
+    {
+      "question": "Are there any specific design guidelines to follow for the form?"
+    }
+  ],
+  "llmFileReferences": [],
+  "inScope": [
+    "Adding a date of birth field to the user registration form.",
+    "Implementing client-side and server-side validations for the date of birth."
+  ],
+  "outOfScope": [
+    "Modifying other parts of the user registration process.",
+    "Changing the overall design of the registration page."
+  ],
+  "suggestedFileChanges": [
+    {
+      "path": "src/components/UserRegistrationForm.tsx",
+      "rationale": "This file likely contains the user registration form where the date of birth field should be added."
+    }
+  ],
+  "promptForAider": "Add a 'date of birth' field to the user registration page. Ensure the field accepts valid date formats, is required, and validates that the user is at least 18 years old. Implement both client-side and server-side validations. Update the form component and ensure tests cover all validation scenarios."
+}
