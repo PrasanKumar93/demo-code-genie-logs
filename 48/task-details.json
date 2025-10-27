@@ -1,0 +1,101 @@
+{
+  "taskId": 48,
+  "name": "[TASK]:  Add Gender field in user regsitration form",
+  "createdOn": "2025-10-11T11:10:52.000Z",
+  "updatedOn": "2025-10-27T13:49:31.000Z",
+  "allAssignees": [
+    "PrasanKumar93"
+  ],
+  "assignee": "PrasanKumar93",
+  "description": "### Task explanation\n\nAdd Gender field in user regsitration form on the /register route\n\n### Task validations\n\n- Gender must be Male, Female or Others only\n\n### Unit Test Cases\n\n- register a user with a valid gender and check if the user is registered successfully by fetching the user from the database\n\n### Task acceptance criteria\n\n- The user should be registered successfully with the valid Gender\n- In frontend design, Gender field must be displayed as dropdown\n- The user should be able to login successfully with existing credentials\n\n### Task context files\n\n- src/routes/user-routes.ts\n- src/services/user-service.ts\n- src/types/user-types.ts\n- src/database/connection.ts\n\n### Tech / Package Dependencies\n\nUse existing material design library for frontend design of new dropdown field, create dropdown as a component and use it in the user registration form\n\n\n",
+  "taskStatus": "TODO",
+  "taskCategory": "",
+  "priority": "MEDIUM",
+  "llmTaskExplanation": "Add a 'Gender' field to the user registration form on the '/register' route. This field should be a dropdown with options 'Male', 'Female', and 'Others'. Update the backend to handle this new field and ensure it is stored in the database. Modify the frontend to display this dropdown using the existing material design library.",
+  "validations": [
+    "Gender must be one of the following: Male, Female, Others.",
+    "Ensure the gender field is required during registration.",
+    "Validate that the gender field is correctly stored in the database."
+  ],
+  "unitTests": [
+    "Test registering a user with 'Male' as gender and verify successful registration.",
+    "Test registering a user with 'Female' as gender and verify successful registration.",
+    "Test registering a user with 'Others' as gender and verify successful registration.",
+    "Test registering a user without selecting a gender and expect a validation error.",
+    "Test fetching a registered user and verify the gender field is correctly stored."
+  ],
+  "acceptanceCriteria": [
+    "Given a user on the registration page, when they select a gender and submit the form, then the user should be registered successfully.",
+    "The gender field should be displayed as a dropdown on the registration form.",
+    "The user should be able to log in with their existing credentials after registration."
+  ],
+  "technicalDependencies": [
+    "Use the existing material design library for the dropdown component."
+  ],
+  "security": [
+    "Ensure input sanitization for the gender field to prevent injection attacks."
+  ],
+  "performance": [
+    "Ensure the addition of the gender field does not significantly impact the registration form's load time."
+  ],
+  "businessContext": "The addition of the gender field is likely to improve user profiling and personalization features.",
+  "otherNotes": "Consider adding telemetry to track the distribution of gender selections for analytics purposes.",
+  "llmAssumptions": [
+    {
+      "assumption": "The tech stack includes a material design library for frontend components."
+    },
+    {
+      "assumption": "The backend is capable of handling additional fields in the user registration process."
+    }
+  ],
+  "llmOpenQuestions": [
+    {
+      "question": "What is the current tech stack used in the project?"
+    },
+    {
+      "question": "Are there any specific coding standards or guidelines to follow?"
+    }
+  ],
+  "llmFileReferences": [
+    {
+      "path": "src/routes/user-routes.ts"
+    },
+    {
+      "path": "src/services/user-service.ts"
+    },
+    {
+      "path": "src/types/user-types.ts"
+    },
+    {
+      "path": "src/database/connection.ts"
+    }
+  ],
+  "inScope": [
+    "Adding a gender dropdown to the registration form.",
+    "Updating backend to handle the new gender field.",
+    "Ensuring the gender field is stored in the database."
+  ],
+  "outOfScope": [
+    "Modifying login functionality beyond ensuring existing credentials work post-registration.",
+    "Implementing any analytics or telemetry beyond basic tracking."
+  ],
+  "suggestedFileChanges": [
+    {
+      "path": "src/routes/user-routes.ts",
+      "rationale": "To handle the new gender field in the registration route."
+    },
+    {
+      "path": "src/services/user-service.ts",
+      "rationale": "To process and validate the gender field during user registration."
+    },
+    {
+      "path": "src/types/user-types.ts",
+      "rationale": "To update the user type definition to include the gender field."
+    },
+    {
+      "path": "src/database/connection.ts",
+      "rationale": "To ensure the gender field is correctly stored in the database."
+    }
+  ],
+  "promptForAider": "Add a 'Gender' dropdown field to the user registration form on the '/register' route. Ensure the options are 'Male', 'Female', and 'Others'. Update the backend to handle this field and store it in the database. Use the existing material design library for the dropdown. Validate that the gender is required and correctly stored. Ensure users can log in with existing credentials post-registration."
+}
