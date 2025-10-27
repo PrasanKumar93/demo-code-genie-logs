@@ -1,0 +1,83 @@
+{
+  "taskId": 49,
+  "name": "Add Gender field in user regsitration form on the /register route",
+  "createdOn": "2025-10-27T15:01:46.000Z",
+  "updatedOn": "2025-10-27T15:01:58.000Z",
+  "allAssignees": [
+    "PrasanKumar93"
+  ],
+  "assignee": "PrasanKumar93",
+  "description": "Add Gender field in user regsitration form on the /register route\n\nGender must be Male, Female or Others only\n",
+  "taskStatus": "TODO",
+  "taskCategory": "",
+  "priority": "",
+  "llmTaskExplanation": "Add a 'Gender' field to the user registration form on the '/register' route. The field should allow users to select from 'Male', 'Female', or 'Others'. This change will likely involve updating the form component and any associated backend logic to handle the new field.",
+  "validations": [
+    "Gender field must be a dropdown with options: Male, Female, Others.",
+    "Gender field should be required.",
+    "Ensure the selected gender value is correctly submitted to the backend."
+  ],
+  "unitTests": [
+    "Test that the Gender field is present on the registration form.",
+    "Test that the Gender field has the options: Male, Female, Others.",
+    "Test form submission with each gender option to ensure correct data handling.",
+    "Test form submission without selecting a gender to ensure validation error is shown."
+  ],
+  "acceptanceCriteria": [
+    "Given a user is on the registration page, when they view the form, then they should see a Gender dropdown with options: Male, Female, Others.",
+    "When a user submits the form without selecting a gender, they should see a validation error.",
+    "When a user selects a gender and submits the form, the selected gender should be correctly sent to the backend."
+  ],
+  "technicalDependencies": [
+    "React (if frontend is React-based)",
+    "Express (if backend is Node.js/Express-based)"
+  ],
+  "security": [
+    "Ensure input sanitization for the Gender field to prevent injection attacks."
+  ],
+  "performance": [
+    "Ensure the addition of the Gender field does not significantly impact form load times."
+  ],
+  "businessContext": "The addition of a Gender field allows for more personalized user experiences and data collection.",
+  "otherNotes": "Consider adding analytics to track the distribution of gender selections.",
+  "llmAssumptions": [
+    {
+      "assumption": "The project uses a web framework like React for the frontend."
+    },
+    {
+      "assumption": "The backend is built with Node.js and Express."
+    },
+    {
+      "assumption": "The registration form is currently implemented and functional."
+    }
+  ],
+  "llmOpenQuestions": [
+    {
+      "question": "What is the current tech stack used in the project?"
+    },
+    {
+      "question": "Is there an existing backend endpoint to handle the registration form submission?"
+    }
+  ],
+  "llmFileReferences": [],
+  "inScope": [
+    "Adding a Gender field to the registration form.",
+    "Updating form validation logic to include the Gender field.",
+    "Ensuring backend can handle the new Gender field data."
+  ],
+  "outOfScope": [
+    "Changing any other fields on the registration form.",
+    "Implementing any new backend features unrelated to the Gender field."
+  ],
+  "suggestedFileChanges": [
+    {
+      "path": "src/components/RegisterForm.jsx",
+      "rationale": "To add the Gender field to the registration form."
+    },
+    {
+      "path": "src/routes/register.js",
+      "rationale": "To handle the new Gender field in form submissions."
+    }
+  ],
+  "promptForAider": "Add a 'Gender' field to the user registration form on the '/register' route. Ensure the field is a dropdown with options: Male, Female, Others. Update form validation to require this field. Ensure the backend can handle the new field data. Implement unit tests to verify the field's presence, options, and validation. Ensure input sanitization for security."
+}
