@@ -55,10 +55,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the current tech stack used in the project?"
+      "question": "What is the current tech stack used in the project?",
+      "answer":"front end is Next JS typescript, back end is express node js typescript, database is MongoDB"
     },
     {
-      "question": "Is there a preferred date format for the date of birth field?"
+      "question": "Is there a preferred date format for the date of birth field?",
+      "answer":"yes, since country is INDIA, it is dd/mm/yyyy"
     }
   ],
   "llmFileReferences": [],
