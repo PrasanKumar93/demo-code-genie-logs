@@ -57,10 +57,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the current tech stack used in the project?"
+      "question": "What is the current tech stack used in the project?",
+      "answer":"front end is nextjs typescript, back end is express typescript and mongodb"
     },
     {
-      "question": "Are there any specific design guidelines to follow for the form?"
+      "question": "Are there any specific design guidelines to follow for the form?",
+      "answer":"no"
     }
   ],
   "llmFileReferences": [],
