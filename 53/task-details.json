@@ -55,10 +55,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the current tech stack used in the project?"
+      "question": "What is the current tech stack used in the project?",
+      "answer":"front end is next js, backend is node typescript"
     },
     {
-      "question": "Is there an existing date validation library in use?"
+      "question": "Is there an existing date validation library in use?",
+      "answer": "no, use your own"
     }
   ],
   "llmFileReferences": [],
