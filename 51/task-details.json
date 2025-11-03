@@ -2,7 +2,7 @@
   "taskId": 51,
   "name": "Add date of birth field in user registration page",
   "createdAt": "2025-11-01T09:37:19.000Z",
-  "updatedAt": "2025-11-03T14:46:16.000Z",
+  "updatedAt": "2025-11-03T14:58:20.000Z",
   "allAssignees": [
     "PrasanKumar93"
   ],
@@ -11,46 +11,45 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of birth' field to the user registration page. This involves updating the user registration form to include a new input field for the date of birth, ensuring it is properly validated and stored in the database.",
+  "llmTaskExplanation": "Add a 'date of birth' field to the user registration page. This involves updating the user registration form component to include a new input field for the date of birth, ensuring it is properly validated and stored in the backend database.",
   "validations": [
-    "The date of birth field should accept valid date formats (e.g., YYYY-MM-DD).",
-    "The date of birth should not be a future date.",
-    "The user should be at least 18 years old.",
-    "The date of birth field should be required."
+    "Date of birth must be a valid date.",
+    "Date of birth cannot be in the future.",
+    "Date of birth must be in the format YYYY-MM-DD.",
+    "Date of birth is a required field."
   ],
   "unitTests": [
-    "Test that the date of birth field accepts a valid date format.",
-    "Test that the date of birth field rejects future dates.",
-    "Test that the date of birth field rejects dates indicating the user is under 18.",
-    "Test that the date of birth field is required and shows an error if left empty."
+    "Test that the date of birth field accepts a valid date in the format YYYY-MM-DD.",
+    "Test that the date of birth field rejects dates in the future.",
+    "Test that the date of birth field rejects invalid date formats.",
+    "Test that the form submission fails if the date of birth field is empty."
   ],
   "acceptanceCriteria": [
-    "Given a user registration form, when the user enters a valid date of birth, then the form should accept the input.",
-    "Given a user registration form, when the user enters a future date, then the form should display an error message.",
-    "Given a user registration form, when the user enters a date indicating they are under 18, then the form should display an error message.",
-    "Given a user registration form, when the user submits the form without a date of birth, then the form should display an error message."
+    "Given a user is on the registration page, when they enter a valid date of birth, then the form should accept the input.",
+    "Given a user is on the registration page, when they enter a date of birth in the future, then the form should display an error message.",
+    "Given a user is on the registration page, when they submit the form without a date of birth, then the form should display an error message."
   ],
   "technicalDependencies": [
-    "Date validation library (e.g., moment.js or date-fns) if not already in use."
+    "Date validation library (e.g., date-fns or moment.js) if not already in use."
   ],
   "security": [
-    "Ensure the date of birth input is sanitized to prevent injection attacks.",
-    "Handle the date of birth as PII and ensure it is stored securely."
+    "Ensure date of birth input is sanitized to prevent injection attacks.",
+    "Consider encrypting the date of birth if stored in the database as it is PII."
   ],
   "performance": [
     "Ensure the addition of the date of birth field does not significantly impact form load times."
   ],
-  "businessContext": "The date of birth is required to ensure users meet age requirements for registration.",
-  "otherNotes": "Consider adding a feature flag if this change needs to be rolled out gradually.",
+  "businessContext": "The date of birth is likely used for age verification or personalization purposes.",
+  "otherNotes": "Consider adding a tooltip or placeholder text to guide users on the expected date format.",
   "llmAssumptions": [
     {
       "assumption": "The tech stack includes a frontend framework like React or Angular."
     },
     {
-      "assumption": "The backend is capable of handling date inputs and storing them in the database."
+      "assumption": "The backend is capable of handling additional user data fields."
     },
     {
-      "assumption": "There is an existing user registration form to modify."
+      "assumption": "There is an existing user registration form component."
     }
   ],
   "llmOpenQuestions": [
@@ -58,32 +57,27 @@
       "question": "What is the current tech stack used in the project?"
     },
     {
-      "question": "Is there a specific date format that should be enforced?"
+      "question": "Is there an existing date validation library in use?"
     }
   ],
   "llmFileReferences": [],
   "inScope": [
     "Adding a date of birth field to the user registration form.",
-    "Validating the date of birth input.",
-    "Updating the backend to store the date of birth."
+    "Validating the date of birth input."
   ],
   "outOfScope": [
-    "Modifying other parts of the user profile.",
-    "Implementing age-based content restrictions."
+    "Modifying any other parts of the user profile or registration process.",
+    "Implementing age-based access restrictions."
   ],
   "suggestedFileChanges": [
     {
       "path": "src/components/UserRegistrationForm.tsx",
-      "rationale": "To add the date of birth field to the registration form."
+      "rationale": "To add the date of birth input field to the registration form."
     },
     {
-      "path": "src/validators/dateValidator.ts",
-      "rationale": "To implement date validation logic."
-    },
-    {
-      "path": "src/models/User.ts",
-      "rationale": "To update the user model to include the date of birth."
+      "path": "src/validators/dateValidator.js",
+      "rationale": "To implement or update date validation logic."
     }
   ],
-  "promptForAider": "Add a 'date of birth' field to the user registration page. Ensure the field accepts valid date formats, is required, and validates that the user is at least 18 years old. Update the backend to store this information securely. Use a date validation library if necessary. Consider security implications for handling PII."
+  "promptForAider": "Add a 'date of birth' field to the user registration page. Ensure the field is validated for correct date format (YYYY-MM-DD), is not in the future, and is required. Update the UserRegistrationForm component and implement necessary validations. Consider using a date validation library if not already in use. Ensure the field is properly sanitized and consider encryption for PII protection."
 }
