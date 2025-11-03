@@ -55,10 +55,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the current tech stack used in the project?"
+      "question": "What is the current tech stack used in the project?",
+      "answer":"next js, node , typescript, MongoDB"
     },
     {
-      "question": "Is there a preferred date validation library already in use?"
+      "question": "Is there a preferred date validation library already in use?",
+      "answer":"use any material design library"
     }
   ],
   "llmFileReferences": [],
