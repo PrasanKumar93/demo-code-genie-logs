@@ -2,7 +2,7 @@
   "taskId": 53,
   "name": "Add date of birth field in user registration page",
   "createdAt": "2025-11-03T16:35:45.000Z",
-  "updatedAt": "2025-11-03T16:43:32.000Z",
+  "updatedAt": "2025-11-03T17:02:30.000Z",
   "allAssignees": [
     "PrasanKumar93"
   ],
@@ -11,7 +11,7 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of birth' field to the user registration page using Next.js for the frontend and Node.js with TypeScript for the backend. This involves updating the user registration form to include a new input field for the date of birth, ensuring it is properly validated and stored in the database. Implement custom date validation as no existing library is in use.",
+  "llmTaskExplanation": "Add a 'date of birth' field to the user registration page. This involves updating the user registration form to include a new input field for the date of birth, ensuring it is properly validated and stored in the database.",
   "validations": [
     "The date of birth field should accept valid date formats (e.g., YYYY-MM-DD).",
     "The date of birth should not be a future date.",
@@ -26,22 +26,22 @@
   ],
   "acceptanceCriteria": [
     "Given a user registration form, when the user enters a valid date of birth, then the form should accept the input.",
-    "Given a user registration form, when the user enters a future date, then the form should display an error message.",
-    "Given a user registration form, when the user leaves the date of birth field empty, then the form should display an error message.",
-    "Given a user registration form, when the user enters a date of birth that makes them under 18, then the form should display an error message."
+    "Given a user registration form, when the user enters a future date as the date of birth, then the form should display an error message.",
+    "Given a user registration form, when the user leaves the date of birth field empty, then the form should display a required field error.",
+    "Given a user registration form, when the user enters a date of birth that makes them under 18, then the form should display an age restriction error."
   ],
   "technicalDependencies": [
-    "Custom date validation logic as no existing library is in use."
+    "Date validation library (e.g., moment.js or date-fns) if not already in use."
   ],
   "security": [
-    "Ensure the date of birth input is sanitized to prevent injection attacks.",
-    "Handle the date of birth as PII and ensure it is stored securely."
+    "Ensure input sanitization to prevent injection attacks.",
+    "Handle date of birth as PII and ensure it is stored securely."
   ],
   "performance": [
-    "Ensure the addition of the date of birth field does not significantly impact form submission performance."
+    "Ensure that adding the date of birth field does not significantly impact form load times."
   ],
-  "businessContext": "The date of birth is required to ensure users meet age requirements for registration.",
-  "otherNotes": "Consider adding a feature flag if this change needs to be rolled out gradually.",
+  "businessContext": "The date of birth is required for age verification and may be used for personalized user experiences.",
+  "otherNotes": "Consider adding a migration script if the date of birth needs to be added to the existing user database schema.",
   "llmAssumptions": [
     {
       "assumption": "The tech stack includes a frontend framework like React or Angular."
@@ -50,13 +50,17 @@
       "assumption": "The backend is capable of handling date inputs and storing them in a database."
     },
     {
-      "assumption": "There is an existing user registration form to modify."
-    },
-    {
-      "assumption": "The frontend is using Next.js and the backend is using Node.js with TypeScript."
+      "assumption": "There is an existing user registration form that can be modified."
     }
   ],
-  "llmOpenQuestions": [],
+  "llmOpenQuestions": [
+    {
+      "question": "What is the current tech stack used in the project?"
+    },
+    {
+      "question": "Is there an existing database schema that needs to be updated to include the date of birth?"
+    }
+  ],
   "llmFileReferences": [],
   "inScope": [
     "Adding a date of birth field to the user registration form.",
@@ -64,22 +68,21 @@
     "Updating the backend to store the date of birth."
   ],
   "outOfScope": [
-    "Modifying other parts of the user profile.",
-    "Changing the user registration process beyond adding the date of birth field."
+    "Modifying other parts of the user profile or registration process not related to the date of birth."
   ],
   "suggestedFileChanges": [
     {
       "path": "src/components/UserRegistrationForm.tsx",
-      "rationale": "To add the date of birth input field."
+      "rationale": "To add the date of birth input field to the registration form."
     },
     {
       "path": "src/validators/dateValidator.js",
-      "rationale": "To add or update date validation logic."
+      "rationale": "To implement validation logic for the date of birth."
     },
     {
       "path": "src/models/User.js",
-      "rationale": "To update the user model to include the date of birth."
+      "rationale": "To update the user model to include the date of birth field."
     }
   ],
-  "promptForAider": "Add a 'date of birth' field to the user registration page using Next.js for the frontend and Node.js with TypeScript for the backend. Ensure the field accepts valid date formats, is required, and does not accept future dates or dates indicating the user is under 18. Implement custom date validation logic. Update the backend to store this information securely. Consider security implications for handling PII. Update the following files: src/components/UserRegistrationForm.tsx, src/validators/dateValidator.js, src/models/User.js."
+  "promptForAider": "Add a 'date of birth' field to the user registration page. Ensure it accepts valid date formats, is required, and does not allow future dates or users under 18. Update the backend to store this information securely. Validate inputs and write unit tests to cover all edge cases. Consider using a date validation library if not already in use."
 }
