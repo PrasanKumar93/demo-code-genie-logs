@@ -61,7 +61,7 @@
   "llmFileReferences": [],
   "inScope": [
     "Adding a date of birth field to the user registration form.",
-    "Validating the date of birth input."
+    "Validating the date of birth input on both client and server sides."
   ],
   "outOfScope": [
     "Modifying any other parts of the user profile or registration process.",
@@ -69,8 +69,8 @@
   ],
   "suggestedFileChanges": [
     {
-      "path": "src/components/UserRegistrationForm.tsx",
-      "rationale": "To add the date of birth field to the registration form."
+      "path": "src/components/RegistrationForm.jsx",
+      "rationale": "To add the date of birth input field to the registration form."
     },
     {
       "path": "src/validators/dateValidator.js",
