@@ -11,7 +11,7 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of birth' field to the user registration page. This involves updating the user registration form to include a new input field for the date of birth, ensuring it is properly validated and stored in the database.",
+  "llmTaskExplanation": "Add a 'date of birth' field to the user registration page using Next.js and TypeScript. Ensure it accepts valid date formats, is required, and does not allow future dates or users under 18. Update the backend to store this information securely. Validate inputs and write unit tests to cover all edge cases. Consider using a date validation library if not already in use.",
   "validations": [
     "The date of birth field should accept valid date formats (e.g., YYYY-MM-DD).",
     "The date of birth should not be a future date.",
@@ -51,18 +51,12 @@
     },
     {
       "assumption": "There is an existing user registration form that can be modified."
-    }
-  ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the current tech stack used in the project?",
-      "answer":"front end is next js typescript"
     },
     {
-      "question": "Is there an existing database schema that needs to be updated to include the date of birth?",
-      "answer":"no"
+      "assumption": "The front end is Next.js with TypeScript."
     }
   ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Adding a date of birth field to the user registration form.",
@@ -86,5 +80,5 @@
       "rationale": "To update the user model to include the date of birth field."
     }
   ],
-  "promptForAider": "Add a 'date of birth' field to the user registration page. Ensure it accepts valid date formats, is required, and does not allow future dates or users under 18. Update the backend to store this information securely. Validate inputs and write unit tests to cover all edge cases. Consider using a date validation library if not already in use."
+  "promptForAider": "Add a 'date of birth' field to the user registration page using Next.js and TypeScript. Ensure it accepts valid date formats, is required, and does not allow future dates or users under 18. Update the backend to store this information securely. Validate inputs and write unit tests to cover all edge cases. Consider using a date validation library if not already in use. Update src/components/UserRegistrationForm.tsx, src/validators/dateValidator.js, and src/models/User.js accordingly."
 }
