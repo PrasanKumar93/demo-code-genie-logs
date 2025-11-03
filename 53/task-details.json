@@ -55,10 +55,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the current tech stack used in the project?"
+      "question": "What is the current tech stack used in the project?",
+      "answer":"front end is next js typescript"
     },
     {
-      "question": "Is there an existing database schema that needs to be updated to include the date of birth?"
+      "question": "Is there an existing database schema that needs to be updated to include the date of birth?",
+      "answer":"no"
     }
   ],
   "llmFileReferences": [],
