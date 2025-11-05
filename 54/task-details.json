@@ -11,15 +11,15 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
+  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately. The field should follow the dd/mm/yyyy format as per the Indian region.",
   "validations": [
-    "The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD).",
+    "The 'date of joining' field should accept valid date formats (e.g., DD/MM/YYYY).",
     "The field should not accept future dates.",
     "The field should be optional for now, but should validate correctly if filled.",
     "Ensure the date is stored in the correct format in the database."
   ],
   "unitTests": [
-    "Test that the 'date of joining' field accepts a valid date format.",
+    "Test that the 'date of joining' field accepts a valid date format (DD/MM/YYYY).",
     "Test that the field rejects future dates.",
     "Test that the form submits successfully with and without the 'date of joining' field filled.",
     "Test that the backend correctly stores the 'date of joining' when provided."
@@ -50,18 +50,12 @@
     },
     {
       "assumption": "There is an existing student registration form that this field will be added to."
-    }
-  ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the current tech stack used for the student registration page?",
-      "answer":"Front end is next js typescript , back end is node js, database is mongodb"
     },
     {
-      "question": "Is there a specific date format that should be enforced for the 'date of joining' field?",
-      "answer":"Yes region is INDIA, so dd/mm/yyy"
+      "assumption": "The tech stack includes Next.js with TypeScript for the frontend, Node.js for the backend, and MongoDB for the database."
     }
   ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Adding a 'date of joining' field to the student registration form.",
@@ -82,5 +76,5 @@
       "rationale": "To ensure the 'date of joining' is stored in the database."
     }
   ],
-  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats, does not accept future dates, and is optional. Update the frontend form and backend to handle this new field. Validate inputs and ensure data is stored correctly. Use existing date handling libraries if available. Sanitize inputs to prevent injection attacks. Ensure no significant impact on form load times."
+  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats (DD/MM/YYYY), does not accept future dates, and is optional. Update the frontend form and backend to handle this new field. Validate inputs and ensure data is stored correctly. Use existing date handling libraries if available. Sanitize inputs to prevent injection attacks. Ensure no significant impact on form load times."
 }
