@@ -54,10 +54,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the current tech stack used in the project?"
+      "question": "What is the current tech stack used in the project?",
+      "answer":"frontend is angular, back end is dotnet, database is sql server"
     },
     {
-      "question": "Is the 'date of joining' field mandatory or optional?"
+      "question": "Is the 'date of joining' field mandatory or optional?",
+      "answer":"its mandatory and use material design library for UI"
     }
   ],
   "llmFileReferences": [],
