@@ -1,0 +1,14 @@
+{
+  "taskId": 55,
+  "name": "Add date of joining field in student registration page",
+  "createdAt": "2025-11-05T08:34:38.000Z",
+  "updatedAt": "2025-11-05T08:34:38.000Z",
+  "allAssignees": [
+    "PrasanKumar93"
+  ],
+  "assignee": "PrasanKumar93",
+  "description": "Add date of joining field in student registration page",
+  "taskStatus": "TODO",
+  "taskCategory": "",
+  "priority": ""
+}
