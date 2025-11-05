@@ -11,27 +11,30 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
+  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page using Angular for the frontend and .NET for the backend. This involves updating the frontend form to include a new date input field using the Material Design library and ensuring that the backend can handle this new mandatory data field appropriately.",
   "validations": [
     "The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD).",
     "The 'date of joining' should not be a future date.",
-    "The field should be optional if not specified otherwise.",
-    "Ensure the date is stored in the correct format in the database."
+    "Ensure the date is stored in the correct format in the database.",
+    "The 'date of joining' field is mandatory."
   ],
   "unitTests": [
     "Test that the 'date of joining' field accepts a valid date.",
     "Test that the 'date of joining' field rejects future dates.",
     "Test form submission with and without the 'date of joining' field.",
-    "Test that the 'date of joining' is correctly saved to the database."
+    "Test that the 'date of joining' is correctly saved to the database.",
+    "Test that the form submission fails if the 'date of joining' field is empty."
   ],
   "acceptanceCriteria": [
     "Given the student registration page, when a user fills out the form, they should see a 'date of joining' field.",
     "When the form is submitted with a valid date, the data should be saved successfully.",
     "When the form is submitted with a future date, an error message should be displayed.",
-    "The 'date of joining' should be displayed correctly in the user profile after registration."
+    "The 'date of joining' should be displayed correctly in the user profile after registration.",
+    "The form should not submit if the 'date of joining' field is empty."
   ],
   "technicalDependencies": [
-    "Use existing date handling libraries if available in the project."
+    "Use existing date handling libraries if available in the project.",
+    "Use Material Design library for UI components."
   ],
   "security": [
     "Sanitize the 'date of joining' input to prevent injection attacks."
@@ -50,18 +53,12 @@
     },
     {
       "assumption": "There is a database schema that can be updated to include the 'date of joining'."
-    }
-  ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the current tech stack used in the project?",
-      "answer":"frontend is angular, back end is dotnet, database is sql server"
     },
     {
-      "question": "Is the 'date of joining' field mandatory or optional?",
-      "answer":"its mandatory and use material design library for UI"
+      "assumption": "The frontend is Angular, backend is .NET, and the database is SQL Server."
     }
   ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Adding a 'date of joining' field to the student registration form.",
@@ -81,5 +78,5 @@
       "rationale": "To handle the new 'date of joining' field in the backend."
     }
   ],
-  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid dates, does not allow future dates, and is correctly saved to the database. Update both frontend and backend components to handle this new field. Validate input to prevent security issues and ensure performance is not degraded."
+  "promptForAider": "Add a 'date of joining' field to the student registration page using Angular and .NET. Ensure the field is mandatory, accepts valid dates, does not allow future dates, and is correctly saved to the SQL Server database. Update both frontend and backend components to handle this new field using the Material Design library. Validate input to prevent security issues and ensure performance is not degraded."
 }
