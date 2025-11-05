@@ -54,12 +54,15 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the current tech stack used for the student registration page?"
+      "question": "What is the current tech stack used for the student registration page?",
+      "answer":"front end is next js typescript, back end is node js typescript and database is MongoDB"
     },
     {
-      "question": "Is there a specific date format that should be enforced for the 'date of joining' field?"
+      "question": "Is there a specific date format that should be enforced for the 'date of joining' field?",
+      "answer":"yes, dd/mm/yyyy as region is INDIA"
     }
   ],
+  "userFeedback":"use any material design library for datefield UI",
   "llmFileReferences": [],
   "inScope": [
     "Adding a 'date of joining' field to the student registration form.",
