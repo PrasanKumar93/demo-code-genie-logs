@@ -1,0 +1,84 @@
+{
+  "taskId": 54,
+  "name": "Add date of joining field in student registration page",
+  "createdAt": "2025-11-05T06:06:48.000Z",
+  "updatedAt": "2025-11-05T06:22:10.000Z",
+  "allAssignees": [
+    "PrasanKumar93"
+  ],
+  "assignee": "PrasanKumar93",
+  "description": "Add date of joining field in student registration page",
+  "taskStatus": "TODO",
+  "taskCategory": "",
+  "priority": "",
+  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
+  "validations": [
+    "The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD).",
+    "The field should not accept future dates.",
+    "The field should be optional for now, but should validate correctly if filled.",
+    "Ensure the date is stored in the correct format in the database."
+  ],
+  "unitTests": [
+    "Test that the 'date of joining' field accepts a valid date format.",
+    "Test that the field rejects future dates.",
+    "Test that the form submits successfully with and without the 'date of joining' field filled.",
+    "Test that the backend correctly stores the 'date of joining' when provided."
+  ],
+  "acceptanceCriteria": [
+    "Given a student registration form, when a user views the form, then they should see a 'date of joining' field.",
+    "When a user enters a valid date in the 'date of joining' field, the form should accept it.",
+    "When a user enters a future date, the form should display an error message.",
+    "When the form is submitted, the 'date of joining' should be correctly saved in the database."
+  ],
+  "technicalDependencies": [
+    "Use existing date handling libraries or components if available in the project."
+  ],
+  "security": [
+    "Sanitize the 'date of joining' input to prevent injection attacks."
+  ],
+  "performance": [
+    "Ensure that adding the new field does not significantly impact form load times."
+  ],
+  "businessContext": "The 'date of joining' field is likely used for administrative purposes, such as tracking student enrollment dates.",
+  "otherNotes": "Consider adding a feature flag if this change needs to be rolled out gradually.",
+  "llmAssumptions": [
+    {
+      "assumption": "The tech stack includes a frontend framework capable of handling form inputs, such as React or Angular."
+    },
+    {
+      "assumption": "The backend is capable of handling date inputs and storing them in a database."
+    },
+    {
+      "assumption": "There is an existing student registration form that this field will be added to."
+    }
+  ],
+  "llmOpenQuestions": [
+    {
+      "question": "What is the current tech stack used for the student registration page?"
+    },
+    {
+      "question": "Is there a specific date format that should be enforced for the 'date of joining' field?"
+    }
+  ],
+  "llmFileReferences": [],
+  "inScope": [
+    "Adding a 'date of joining' field to the student registration form.",
+    "Validating the 'date of joining' input on the frontend.",
+    "Ensuring the backend can handle and store the 'date of joining' data."
+  ],
+  "outOfScope": [
+    "Modifying any other parts of the student registration process.",
+    "Implementing any new backend services."
+  ],
+  "suggestedFileChanges": [
+    {
+      "path": "path/to/studentRegistrationForm.tsx",
+      "rationale": "To add the 'date of joining' field to the form."
+    },
+    {
+      "path": "path/to/studentModel.js",
+      "rationale": "To ensure the 'date of joining' is stored in the database."
+    }
+  ],
+  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats, does not accept future dates, and is optional. Update the frontend form and backend to handle this new field. Validate inputs and ensure data is stored correctly. Use existing date handling libraries if available. Sanitize inputs to prevent injection attacks. Ensure no significant impact on form load times."
+}
