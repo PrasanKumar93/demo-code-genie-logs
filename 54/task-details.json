@@ -2,7 +2,7 @@
   "taskId": 54,
   "name": "Add date of joining field in student registration page",
   "createdAt": "2025-11-05T06:06:48.000Z",
-  "updatedAt": "2025-11-05T06:42:56.000Z",
+  "updatedAt": "2025-11-05T06:56:45.000Z",
   "allAssignees": [
     "PrasanKumar93"
   ],
@@ -10,72 +10,5 @@
   "description": "Add date of joining field in student registration page",
   "taskStatus": "TODO",
   "taskCategory": "",
-  "priority": "",
-  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
-  "validations": [
-    "The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD).",
-    "The field should not accept future dates.",
-    "The field should be optional for existing records but required for new registrations."
-  ],
-  "unitTests": [
-    "Test that the 'date of joining' field accepts a valid date format.",
-    "Test that the field rejects future dates.",
-    "Test that the field is optional for existing records.",
-    "Test that the field is required for new registrations."
-  ],
-  "acceptanceCriteria": [
-    "Given a student registration form, when a user fills out the form, then they should see a 'date of joining' field.",
-    "When the user submits the form with a valid date, the registration should be successful.",
-    "When the user submits the form with a future date, an error message should be displayed.",
-    "When the user submits the form without a 'date of joining' for a new registration, an error message should be displayed."
-  ],
-  "technicalDependencies": [
-    "React for frontend form handling",
-    "Node.js/Express for backend handling (assumed)"
-  ],
-  "security": [
-    "Sanitize input to prevent XSS attacks.",
-    "Validate date input on the server-side to prevent invalid data entry."
-  ],
-  "performance": [
-    "Ensure the addition of the new field does not significantly impact form load times."
-  ],
-  "businessContext": "The 'date of joining' is important for tracking student enrollment and ensuring accurate records.",
-  "otherNotes": "Consider adding a migration script if the database schema needs to be updated to include the new field.",
-  "llmAssumptions": [
-    {
-      "assumption": "The tech stack includes React for the frontend and Node.js/Express for the backend."
-    },
-    {
-      "assumption": "The database schema will need to be updated to include the 'date of joining' field."
-    }
-  ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the current tech stack used in the project?"
-    },
-    {
-      "question": "Is there an existing database schema that needs to be updated?"
-    }
-  ],
-  "llmFileReferences": [],
-  "inScope": [
-    "Adding a 'date of joining' field to the student registration form.",
-    "Updating backend to handle the new field."
-  ],
-  "outOfScope": [
-    "Modifying any other parts of the student registration process.",
-    "Changing the design or layout of the registration page beyond adding the new field."
-  ],
-  "suggestedFileChanges": [
-    {
-      "path": "src/components/StudentRegistrationForm.jsx",
-      "rationale": "To add the 'date of joining' field to the form."
-    },
-    {
-      "path": "src/server/routes/student.js",
-      "rationale": "To handle the new 'date of joining' field in the backend."
-    }
-  ],
-  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats, does not accept future dates, and is required for new registrations. Update both the frontend form and backend handling. Validate inputs and handle errors appropriately."
+  "priority": ""
 }
