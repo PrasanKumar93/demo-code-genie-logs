@@ -11,7 +11,7 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
+  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately. The frontend uses Next.js, and the backend uses Node.js with MongoDB.",
   "validations": [
     "The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD).",
     "The field should not accept future dates.",
@@ -30,8 +30,9 @@
     "Existing student records should remain unaffected if the 'date of joining' is not provided."
   ],
   "technicalDependencies": [
-    "React for frontend form handling",
-    "Node.js/Express for backend handling (assumed)"
+    "Next.js for frontend form handling",
+    "Node.js/Express for backend handling",
+    "MongoDB for database"
   ],
   "security": [
     "Ensure input sanitization to prevent XSS attacks.",
@@ -44,22 +45,13 @@
   "otherNotes": "Consider adding a migration script if the database schema needs to be updated to include the new field.",
   "llmAssumptions": [
     {
-      "assumption": "The tech stack includes React for the frontend and Node.js/Express for the backend."
+      "assumption": "The tech stack includes Next.js for the frontend and Node.js/Express for the backend."
     },
     {
       "assumption": "The database schema will need to be updated to include the 'date of joining' field."
     }
   ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the current tech stack used in the project?",
-      "answer":"front end is next js, back end is node js, database is MongoDB"
-    },
-    {
-      "question": "Is there an existing database schema that needs to be updated?",
-      "answer":"Yes, users schema in database folder"
-    }
-  ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Adding a 'date of joining' field to the student registration form.",
@@ -79,5 +71,5 @@
       "rationale": "To handle the new 'date of joining' field in the backend."
     }
   ],
-  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats and does not allow future dates. Update both frontend and backend to handle this new field. Validate input on both client and server sides. Consider database schema updates if necessary."
+  "promptForAider": "Add a 'date of joining' field to the student registration page using Next.js for the frontend and Node.js with MongoDB for the backend. Ensure the field accepts valid date formats and does not allow future dates. Update both frontend and backend to handle this new field. Validate input on both client and server sides. Consider database schema updates if necessary."
 }
