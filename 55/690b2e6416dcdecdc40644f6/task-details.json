@@ -11,24 +11,23 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new input field for the date of joining and ensuring that this data is correctly captured and stored in the backend database.",
+  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new input field for the date of joining, ensuring that this data is correctly captured and stored in the backend database. The field is mandatory and should not accept future dates.",
   "validations": [
     "The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD).",
     "The field should not accept future dates.",
-    "The field should be optional if not specified otherwise.",
     "Ensure the date is stored in the correct format in the database."
   ],
   "unitTests": [
     "Test that the 'date of joining' field accepts a valid date format.",
     "Test that the field rejects future dates.",
-    "Test that the form submission works without the 'date of joining' field filled.",
+    "Test that the form submission works with the 'date of joining' field filled.",
     "Test that the date is correctly saved in the database."
   ],
   "acceptanceCriteria": [
     "Given the student registration page, when a user views the form, then they should see a 'date of joining' field.",
     "When a user enters a valid date and submits the form, then the date should be saved in the database.",
     "When a user enters a future date, then an error message should be displayed.",
-    "When the form is submitted without a 'date of joining', it should still be accepted if the field is optional."
+    "When the form is submitted without a 'date of joining', it should not be accepted as the field is mandatory."
   ],
   "technicalDependencies": [
     "Date input handling library if not already used in the project."
@@ -49,19 +48,10 @@
       "assumption": "The backend is capable of handling date inputs and storing them in a database."
     },
     {
-      "assumption": "The 'date of joining' field is optional unless specified otherwise."
+      "assumption": "The 'date of joining' field is mandatory."
     }
   ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the current tech stack used in the project?",
-      "answer":"next jsj in frontend, nodejs in backend, mongodb as database"
-    },
-    {
-      "question": "Is the 'date of joining' field mandatory or optional?",
-      "answer":"Mandatory"
-    }
-  ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Adding a 'date of joining' field to the student registration form.",
@@ -82,5 +72,5 @@
       "rationale": "To handle the new date field in the form submission."
     }
   ],
-  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats and does not accept future dates. Update the frontend form and backend handling to store this data correctly. Validate the input and write unit tests to cover positive, negative, and edge cases. Consider the field optional unless specified otherwise. Ensure input sanitization and minimal performance impact."
+  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats and does not accept future dates. Update the frontend form and backend handling to store this data correctly. Validate the input and write unit tests to cover positive, negative, and edge cases. Ensure input sanitization and minimal performance impact. The field is mandatory."
 }
