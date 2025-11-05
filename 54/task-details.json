@@ -11,27 +11,28 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
+  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page using a material design library for the date field UI. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
   "validations": [
-    "The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD).",
+    "The 'date of joining' field should accept valid date formats (e.g., DD/MM/YYYY) as the region is INDIA.",
     "The field should not accept future dates.",
     "The field should be optional for now, but should validate correctly if filled.",
     "Ensure the date is stored in the correct format in the database."
   ],
   "unitTests": [
-    "Test that the 'date of joining' field accepts a valid date format.",
+    "Test that the 'date of joining' field accepts a valid date format (DD/MM/YYYY).",
     "Test that the field rejects future dates.",
     "Test that the form submits successfully without the 'date of joining' field filled.",
     "Test that the form submits successfully with a valid 'date of joining' date."
   ],
   "acceptanceCriteria": [
-    "Given the student registration page, when a user views the form, then they should see a 'date of joining' field.",
+    "Given the student registration page, when a user views the form, then they should see a 'date of joining' field using a material design library.",
     "When a user enters a valid date in the 'date of joining' field, the form should accept it.",
     "When a user enters a future date, the form should display an error message.",
     "When the form is submitted, the 'date of joining' should be saved correctly in the database."
   ],
   "technicalDependencies": [
-    "Use existing date handling libraries or components if available in the project."
+    "Use existing date handling libraries or components if available in the project.",
+    "Use a material design library for the date field UI."
   ],
   "security": [
     "Sanitize the 'date of joining' input to prevent injection attacks."
@@ -50,19 +51,13 @@
     },
     {
       "assumption": "There is an existing student registration form that this field will be added to."
-    }
-  ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the current tech stack used for the student registration page?",
-      "answer":"front end is next js typescript, back end is node js typescript and database is MongoDB"
     },
     {
-      "question": "Is there a specific date format that should be enforced for the 'date of joining' field?",
-      "answer":"yes, dd/mm/yyyy as region is INDIA"
+      "assumption": "The frontend is using Next.js with TypeScript, the backend is Node.js with TypeScript, and the database is MongoDB."
     }
   ],
-  "userFeedback":"use any material design library for datefield UI",
+  "llmOpenQuestions": [],
+  "userFeedback": "use any material design library for datefield UI",
   "llmFileReferences": [],
   "inScope": [
     "Adding a 'date of joining' field to the student registration form.",
@@ -83,5 +78,5 @@
       "rationale": "This file likely handles the API requests for student registration and should be updated to include the new field."
     }
   ],
-  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats, does not accept future dates, and is optional. Update the frontend form and backend handling to accommodate this new field. Validate inputs and ensure data is stored correctly. Use existing date handling libraries if available. Sanitize inputs to prevent injection attacks. Ensure no significant performance impact on form load times."
+  "promptForAider": "Add a 'date of joining' field to the student registration page using a material design library for the date field UI. Ensure the field accepts valid date formats (DD/MM/YYYY), does not accept future dates, and is optional. Update the frontend form and backend handling to accommodate this new field. Validate inputs and ensure data is stored correctly. Use existing date handling libraries if available. Sanitize inputs to prevent injection attacks. Ensure no significant performance impact on form load times."
 }
