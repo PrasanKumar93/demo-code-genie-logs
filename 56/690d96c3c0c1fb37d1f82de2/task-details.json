@@ -56,7 +56,8 @@
       "answer":"front end is next js , backend is nodejs, database is mongodb"
     },
     {
-      "question": "Is there an existing database schema that needs to be updated?"
+      "question": "Is there an existing database schema that needs to be updated?",
+      "answer":"yes, users collection in database folder"
     }
   ],
   "userFeedback":"use material design library in UI",
