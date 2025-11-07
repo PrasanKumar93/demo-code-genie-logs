@@ -54,12 +54,14 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the current tech stack used for the frontend and backend?"
+      "question": "What is the current tech stack used for the frontend and backend?",
+      "answer":"Frontend is next js, back end is node js"
     },
     {
       "question": "Is there a specific date format that should be enforced?"
     }
   ],
+  "userFeedback":"Use any material design library",
   "llmFileReferences": [],
   "inScope": [
     "Adding a 'date of joining' field to the student registration form.",
