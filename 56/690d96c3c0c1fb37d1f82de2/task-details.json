@@ -11,7 +11,7 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
+  "llmTaskExplanation": "Add a 'date of joining' field to the student registration page using Material Design components. This involves updating the frontend form to include a new date input field and ensuring that the backend can handle this new data field appropriately.",
   "validations": [
     "The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD).",
     "The field should not accept future dates.",
@@ -31,7 +31,8 @@
   ],
   "technicalDependencies": [
     "React for frontend form handling",
-    "Node.js/Express for backend handling (assumed)"
+    "Node.js/Express for backend handling (assumed)",
+    "Material Design library for UI components"
   ],
   "security": [
     "Sanitize input to prevent XSS attacks.",
@@ -48,19 +49,16 @@
     },
     {
       "assumption": "The database schema will need to be updated to include the 'date of joining' field."
-    }
-  ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the current tech stack used in the project?",
-      "answer":"front end is next js , backend is nodejs, database is mongodb"
     },
     {
-      "question": "Is there an existing database schema that needs to be updated?",
-      "answer":"yes, users collection in database folder"
+      "assumption": "The front end is Next.js, the backend is Node.js, and the database is MongoDB."
+    },
+    {
+      "assumption": "The users collection in the database folder needs to be updated."
     }
   ],
-  "userFeedback":"use material design library in UI",
+  "llmOpenQuestions": [],
+  "userFeedback": "use material design library in UI",
   "llmFileReferences": [],
   "inScope": [
     "Adding a 'date of joining' field to the student registration form.",
@@ -73,12 +71,12 @@
   "suggestedFileChanges": [
     {
       "path": "src/components/StudentRegistrationForm.jsx",
-      "rationale": "To add the 'date of joining' field to the form."
+      "rationale": "To add the 'date of joining' field to the form using Material Design components."
     },
     {
       "path": "src/server/routes/student.js",
       "rationale": "To handle the new 'date of joining' field in the backend."
     }
   ],
-  "promptForAider": "Add a 'date of joining' field to the student registration page. Ensure the field accepts valid date formats, does not accept future dates, and is required for new registrations. Update both frontend and backend to handle this field. Validate inputs and ensure security measures are in place."
+  "promptForAider": "Add a 'date of joining' field to the student registration page using Material Design components. Ensure the field accepts valid date formats, does not accept future dates, and is required for new registrations. Update both frontend and backend to handle this field. Validate inputs and ensure security measures are in place. Update the users collection in the MongoDB database."
 }
