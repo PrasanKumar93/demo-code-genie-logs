@@ -58,7 +58,8 @@
       "answer":"Frontend is next js, back end is node js"
     },
     {
-      "question": "Is there a specific date format that should be enforced?"
+      "question": "Is there a specific date format that should be enforced?",
+      "answer":"yes, its INDIA location so dd/MM/yyyy"
     }
   ],
   "userFeedback":"Use any material design library",
