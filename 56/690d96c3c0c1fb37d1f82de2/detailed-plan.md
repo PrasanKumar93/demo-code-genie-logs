@@ -67,11 +67,10 @@ The implementation will involve updating both the frontend and backend to handle
 - Ensure that the date picker component is compatible with the existing form setup.
 - Handle cases where users attempt to submit future dates.
 - Consider time zone differences when validating dates.
-- Ensure backward compatibility with existing records in the database.
+- Ensure backward compatibility by making the 'date of joining' optional for existing records.
 
 ### 7. IMPLEMENTATION CONSTRAINTS
 
 - Focus on adding the 'date of joining' field without altering other parts of the registration process.
 - Follow existing codebase conventions for consistency.
 - Ensure backward compatibility with existing records in the database.
-- Maintain type safety and code quality.
