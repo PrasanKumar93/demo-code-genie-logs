@@ -11,11 +11,13 @@
 - The route handling student registration is in `src/server/routes/student.js`.
 - The backend will need to validate the 'date of joining' field, ensuring it is not a future date and is required for new registrations.
 - The backend should provide clear error responses for invalid 'date of joining' inputs.
+- The backend should differentiate between new and existing registrations when validating the 'date of joining' field.
 
 **Database:**
 - The database is MongoDB, and the users collection will need to be updated to include the 'date of joining' field.
 - Existing records should not require this field, but it should be mandatory for new records.
 - A migration script may be necessary to handle existing records without this field.
+- Consideration for timezone differences when validating the 'date of joining' field.
 
 ### 2. IMPLEMENTATION STRATEGY
 
@@ -52,6 +54,7 @@ The implementation will involve updating both the frontend and backend to handle
   - Validate the date format and ensure it is not a future date.
   - Ensure the field is required for new registrations.
   - Handle error responses for invalid 'date of joining' inputs, providing clear error messages.
+  - Differentiate between new and existing registrations when validating the 'date of joining' field.
 - **Rationale**: To process and validate the new field on the server side.
 - **Addresses**: Acceptance criteria 2, 3, and 4.
 
@@ -62,6 +65,7 @@ The implementation will involve updating both the frontend and backend to handle
   - Add a new field for 'date of joining' with appropriate data type.
   - Ensure existing records are not affected.
   - Consider adding a migration script if necessary to handle existing records.
+  - Handle potential errors or exceptions during the database schema update.
 - **Rationale**: To store the new field in the database.
 - **Addresses**: Ensures data persistence for the new field.
 
@@ -71,6 +75,7 @@ The implementation will involve updating both the frontend and backend to handle
 - The backend will validate the date format and ensure it is not a future date.
 - The backend will enforce the requirement for the 'date of joining' field for new registrations.
 - Error messages will be displayed for invalid or missing 'date of joining' inputs.
+- Consider timezone differences when validating the 'date of joining' field.
 
 ### 5. INTEGRATION POINTS
 
@@ -84,6 +89,7 @@ The implementation will involve updating both the frontend and backend to handle
 - Handle cases where the 'date of joining' is missing for new registrations.
 - Ensure backward compatibility for existing records without the 'date of joining' field.
 - Consider how to handle records that may have been created without this field before the update.
+- Handle timezone differences when validating the 'date of joining' field.
 
 ### 7. IMPLEMENTATION CONSTRAINTS
 
