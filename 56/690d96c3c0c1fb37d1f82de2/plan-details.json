@@ -1,4 +1,4 @@
 {
   "detailedPlan": "Refer detailed-plan.md file",
-  "feedback": "The plan does not specify how the 'date of joining' field will be differentiated between new and existing registrations in the backend validation.\nStep 4 mentions a migration script but does not provide details on how existing records without the 'date of joining' field will be handled.\nThe plan does not address how timezone differences will be managed when validating the 'date of joining' field.\nStep 3 should specify how the backend will handle error responses for invalid 'date of joining' inputs.\nThe plan does not mention any specific Material Design date picker component to be used, which could lead to ambiguity in implementation.\nThere is no mention of how the frontend will display error messages for invalid or missing 'date of joining' inputs.\nThe plan should specify how the maximum date for the date picker will be set to the current date to prevent future dates."
+  "feedback": ""
 }
