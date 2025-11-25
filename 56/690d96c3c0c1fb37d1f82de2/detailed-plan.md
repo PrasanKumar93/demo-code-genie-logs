@@ -4,19 +4,22 @@
 - The student registration form is implemented in `src/components/StudentRegistrationForm.jsx`.
 - The form uses Material Design components, so a Material Design date picker will be used for the 'date of joining' field.
 - The form submission logic will need to be updated to include the new field and handle validation for future dates.
+- Error messages for invalid or missing 'date of joining' inputs need to be displayed clearly on the form.
 
 **Backend:**
 - The backend is a Node.js/Express application.
 - The route handling student registration is in `src/server/routes/student.js`.
 - The backend will need to validate the 'date of joining' field, ensuring it is not a future date and is required for new registrations.
+- The backend should provide clear error responses for invalid 'date of joining' inputs.
 
 **Database:**
 - The database is MongoDB, and the users collection will need to be updated to include the 'date of joining' field.
 - Existing records should not require this field, but it should be mandatory for new records.
+- A migration script may be necessary to handle existing records without this field.
 
 ### 2. IMPLEMENTATION STRATEGY
 
-The implementation will involve updating both the frontend and backend to handle the new 'date of joining' field. The frontend will use a Material Design date picker, and the backend will validate the input. The database schema will be updated to include this new field.
+The implementation will involve updating both the frontend and backend to handle the new 'date of joining' field. The frontend will use a Material Design date picker, and the backend will validate the input. The database schema will be updated to include this new field, and a migration script will be considered for existing records.
 
 ### 3. DETAILED STEP-BY-STEP IMPLEMENTATION PLAN
 
@@ -48,7 +51,7 @@ The implementation will involve updating both the frontend and backend to handle
   - Extract the 'date of joining' from the request body.
   - Validate the date format and ensure it is not a future date.
   - Ensure the field is required for new registrations.
-  - Handle error responses for invalid 'date of joining' inputs.
+  - Handle error responses for invalid 'date of joining' inputs, providing clear error messages.
 - **Rationale**: To process and validate the new field on the server side.
 - **Addresses**: Acceptance criteria 2, 3, and 4.
 
