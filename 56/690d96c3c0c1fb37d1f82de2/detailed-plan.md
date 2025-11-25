@@ -5,6 +5,7 @@
 - The form uses Material Design components, so a Material Design date picker will be used for the 'date of joining' field.
 - The form submission logic will need to be updated to include the new field and handle validation for future dates.
 - Error messages for invalid or missing 'date of joining' inputs need to be displayed clearly on the form.
+- The Material Design date picker component to be used is `@mui/lab/DatePicker`.
 
 **Backend:**
 - The backend is a Node.js/Express application.
@@ -29,7 +30,7 @@ The implementation will involve updating both the frontend and backend to handle
 - **File**: `src/components/StudentRegistrationForm.jsx`
 - **Action**: Add a Material Design date picker for 'date of joining'.
 - **Details**: 
-  - Import the Material Design date picker component.
+  - Import the `@mui/lab/DatePicker` component.
   - Add the date picker to the form with appropriate labels and validation messages.
   - Ensure the date picker does not allow future dates by setting the maximum date to the current date.
   - Display error messages for invalid or missing 'date of joining' inputs.
