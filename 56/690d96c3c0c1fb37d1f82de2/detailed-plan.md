@@ -6,6 +6,7 @@
 - The form submission logic will need to be updated to include the new field and handle validation for future dates.
 - Error messages for invalid or missing 'date of joining' inputs need to be displayed clearly on the form.
 - The Material Design date picker component to be used is `@mui/lab/DatePicker`.
+- The date picker will be configured to prevent future dates by setting the maximum date to the current date.
 
 **Backend:**
 - The backend is a Node.js/Express application.
@@ -32,7 +33,7 @@ The implementation will involve updating both the frontend and backend to handle
 - **Details**: 
   - Import the `@mui/lab/DatePicker` component.
   - Add the date picker to the form with appropriate labels and validation messages.
-  - Ensure the date picker does not allow future dates by setting the maximum date to the current date.
+  - Configure the date picker to prevent future dates by setting the maximum date to the current date.
   - Display error messages for invalid or missing 'date of joining' inputs.
 - **Rationale**: To allow users to input their date of joining.
 - **Addresses**: Acceptance criteria 1, 3, and 4.
