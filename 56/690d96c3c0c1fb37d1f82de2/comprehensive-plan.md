@@ -8,15 +8,12 @@
 **Backend:**
 - The backend is a Node.js/Express application.
 - The file `src/server/routes/student.js` handles student registration requests and will need to be updated to process the new 'date of joining' field.
-- The backend should validate the date format and ensure it is not a future date before saving to the database.
-
-**Database:**
 - The MongoDB database schema will need to be updated to include the 'date of joining' field in the users collection.
-- A migration script may be necessary to update the schema without affecting existing records.
+- Existing records without a 'date of joining' should be handled gracefully.
 
 **Validation:**
 - The 'date of joining' field should accept valid date formats (e.g., YYYY-MM-DD), not accept future dates, and be required for new registrations.
-- The frontend should handle error messages for invalid or missing 'date of joining' inputs.
+- The frontend should provide error messages for invalid or missing 'date of joining' inputs.
 - The backend should handle error responses for invalid 'date of joining' inputs.
 
 ### 2. IMPLEMENTATION STRATEGY
@@ -29,7 +26,7 @@ The implementation will involve updating both the frontend and backend to handle
 - **File**: `src/components/StudentRegistrationForm.jsx`
 - **Action**: Add a 'date of joining' field using Material Design components.
 - **Details**: 
-  - Import the necessary Material Design date picker component.
+  - Import the Material-UI `DatePicker` component.
   - Add a new date input field to the form for 'date of joining'.
   - Ensure the field is required and validate that it does not accept future dates.
   - Display error messages for invalid or missing inputs.
@@ -42,8 +39,8 @@ The implementation will involve updating both the frontend and backend to handle
 - **Details**: 
   - Extract the 'date of joining' from the request body.
   - Validate the date format and ensure it is not a future date.
+  - Return error responses for invalid inputs.
   - Save the 'date of joining' to the database.
-  - Handle error responses for invalid inputs.
 - **Rationale**: To ensure the backend can process and store the new field.
 - **Addresses**: Acceptance criteria 2, 3, and 4.
 
@@ -53,7 +50,7 @@ The implementation will involve updating both the frontend and backend to handle
 - **Details**: 
   - Update the MongoDB schema to include the 'date of joining' field.
   - Ensure existing records are not affected.
-  - Consider using a migration script to update the schema.
+  - Consider using a migration script to update the schema if necessary.
 - **Rationale**: To store the 'date of joining' information in the database.
 - **Addresses**: Ensures data persistence for the new field.
 
@@ -61,7 +58,7 @@ The implementation will involve updating both the frontend and backend to handle
 
 - The frontend will use form validation to ensure the 'date of joining' is not empty and does not accept future dates.
 - The backend will perform additional validation to ensure the date format is correct and not in the future before saving to the database.
-- Error messages will be displayed on the frontend for invalid or missing inputs, and the backend will handle error responses.
+- Error messages will be displayed on the frontend for invalid or missing inputs, and appropriate error responses will be returned by the backend.
 
 ### 5. INTEGRATION POINTS
 
@@ -73,7 +70,7 @@ The implementation will involve updating both the frontend and backend to handle
 - Ensure that the date input does not allow future dates.
 - Handle cases where the date format is incorrect.
 - Ensure backward compatibility with existing records that do not have a 'date of joining'.
-- Consider how to handle existing records in the database that do not have a 'date of joining'.
+- Consider how to handle existing records in the database that lack this field.
 
 ### 7. IMPLEMENTATION CONSTRAINTS
 
