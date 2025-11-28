@@ -1,4 +1,4 @@
 {
-  "detailedPlan": "Refer detailed-plan.md file",
-  "feedback": "The plan does not specify how the 'date of joining' field will be made optional for existing records but required for new registrations, as per the validation rules.\nStep 3 mentions updating the database schema but does not provide details on how existing records will be handled to ensure backward compatibility.\nThe plan does not address how the 'date of joining' field will be validated on the frontend to ensure it is not a future date.\nThere is no mention of how error messages will be displayed to the user if validation fails, particularly for future dates or missing 'date of joining'.\nThe plan does not specify how the 'date of joining' field will be integrated into the existing data processing and storage logic in the backend.\nStep 2 should include details on how the backend will handle cases where the 'date of joining' is missing for existing records."
+  "comprehensivePlan": "Refer comprehensive-plan.md file",
+  "feedback": ""
 }
