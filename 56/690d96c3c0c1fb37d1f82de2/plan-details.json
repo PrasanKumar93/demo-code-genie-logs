@@ -1,5 +1,5 @@
 {
   "comprehensivePlan": "Refer comprehensive-plan.md file",
-  "feedback": "",
+  "feedback": "location is INDIA, so date format must be dd/mm/yyyy kind",
   "isPlanApproved": false
 }
