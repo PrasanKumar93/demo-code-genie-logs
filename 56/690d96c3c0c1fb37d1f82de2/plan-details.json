@@ -1,5 +1,5 @@
 {
   "comprehensivePlan": "Refer comprehensive-plan.md file",
-  "feedback": " -The plan does not specify how the 'date of joining' field will be validated on the frontend to ensure it does not accept future dates.\n -Step 3 should specify the exact changes needed in the database schema file to include the 'date of joining' field.\n -The plan does not mention how existing records without a 'date of joining' will be handled in the database.\n -There is no mention of how the frontend will handle error messages for invalid or missing 'date of joining' inputs.\n -The plan should specify how the 'date of joining' field will be integrated into the existing form submission logic on the frontend.",
+  "feedback": "",
   "isPlanApproved": false
 }
