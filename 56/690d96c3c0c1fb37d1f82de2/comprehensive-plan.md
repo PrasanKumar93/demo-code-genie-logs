@@ -14,6 +14,7 @@
 **Validation:**
 - The 'date of joining' field should accept valid date formats and not allow future dates.
 - The field should be required for new registrations but optional for existing records.
+- The date format should be in the Indian format (DD/MM/YYYY).
 
 ### 2. IMPLEMENTATION STRATEGY
 
@@ -28,7 +29,7 @@ The implementation will involve updating both the frontend and backend to handle
   - Import the necessary Material Design date picker component.
   - Add a new date input field labeled 'Date of Joining' to the form.
   - Ensure the field is required for new registrations and does not accept future dates.
-  - Implement frontend validation to check for valid date formats and prevent future dates.
+  - Implement frontend validation to check for valid date formats (DD/MM/YYYY) and prevent future dates.
   - Update form submission logic to include the 'date of joining' field.
   - Display error messages for invalid or missing 'date of joining' inputs.
 - **Rationale**: To allow users to input the date of joining during registration and ensure data integrity.
@@ -39,7 +40,7 @@ The implementation will involve updating both the frontend and backend to handle
 - **Action**: Modify the student registration route to handle the 'date of joining' field.
 - **Details**: 
   - Extract the 'date of joining' field from the request body.
-  - Validate the date format and ensure it is not a future date.
+  - Validate the date format (DD/MM/YYYY) and ensure it is not a future date.
   - Update the database insertion logic to include the 'date of joining' field.
   - Handle cases where existing records do not have a 'date of joining'.
 - **Rationale**: To process and store the 'date of joining' field in the database.
@@ -57,7 +58,7 @@ The implementation will involve updating both the frontend and backend to handle
 
 ### 4. VALIDATION STRATEGY
 
-- Use frontend validation to ensure the date is not in the future and is in a valid format.
+- Use frontend validation to ensure the date is not in the future and is in a valid format (DD/MM/YYYY).
 - Implement backend validation to check the date format and ensure it is not a future date.
 - Ensure the field is required for new registrations but optional for existing records.
 - Display appropriate error messages for invalid or missing inputs.
