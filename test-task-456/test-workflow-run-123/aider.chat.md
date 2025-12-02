@@ -1193,3 +1193,273 @@ User has manually run below shell commands:
  {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mReferenceError\u001b[22m: usersCollection is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m16:5\u001b[22m\u001b[39m\n    \u001b[90m 14| \u001b[39m  \u001b[34mbeforeEach\u001b[39m(\u001b[35masync\u001b[39m () \u001b[33m=>\u001b[39m {\n    \u001b[90m 15| \u001b[39m    \u001b[35mconst\u001b[39m database \u001b[33m=\u001b[39m client\u001b[33m.\u001b[39m\u001b[34mdb\u001b[39m(\u001b[33mPROJ_ENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mMONGO_DB_NAME\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 16| \u001b[39m    usersCollection \u001b[33m=\u001b[39m database\u001b[33m.\u001b[39m\u001b[34mcollection\u001b[39m(\u001b[32m\"users\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m    \u001b[31m^\u001b[39m\n    \u001b[90m 17| \u001b[39m    \u001b[90m// Clear existing data\u001b[39m\n    \u001b[90m 18| \u001b[39m    \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mdeleteMany\u001b[39m({})\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mReferenceError\u001b[22m: usersCollection is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m16:5\u001b[22m\u001b[39m\n    \u001b[90m 14| \u001b[39m  \u001b[34mbeforeEach\u001b[39m(\u001b[35masync\u001b[39m () \u001b[33m=>\u001b[39m {\n    \u001b[90m 15| \u001b[39m    \u001b[35mconst\u001b[39m database \u001b[33m=\u001b[39m client\u001b[33m.\u001b[39m\u001b[34mdb\u001b[39m(\u001b[33mPROJ_ENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mMONGO_DB_NAME\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 16| \u001b[39m    usersCollection \u001b[33m=\u001b[39m database\u001b[33m.\u001b[39m\u001b[34mcollection\u001b[39m(\u001b[32m\"users\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m    \u001b[31m^\u001b[39m\n    \u001b[90m 17| \u001b[39m    \u001b[90m// Clear existing data\u001b[39m\n    \u001b[90m 18| \u001b[39m    \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mdeleteMany\u001b[39m({})\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-02 22:29:34
+
+> /Library/Frameworks/Python.framework/Versions/3.12/bin/aider --yes-always --message Following shell commands execution failed (check .aider.chat.history.md file) :
+   command: vitest run
+ error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mReferenceError\u001b[22m: usersCollection is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m16:5\u001b[22m\u001b[39m\n    \u001b[90m 14| \u001b[39m  \u001b[34mbeforeEach\u001b[39m(\u001b[35masync\u001b[39m () \u001b[33m=>\u001b[39m {\n    \u001b[90m 15| \u001b[39m    \u001b[35mconst\u001b[39m database \u001b[33m=\u001b[39m client\u001b[33m.\u001b[39m\u001b[34mdb\u001b[39m(\u001b[33mPROJ_ENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mMONGO_DB_NAME\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 16| \u001b[39m    usersCollection \u001b[33m=\u001b[39m database\u001b[33m.\u001b[39m\u001b[34mcollection\u001b[39m(\u001b[32m\"users\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m    \u001b[31m^\u001b[39m\n    \u001b[90m 17| \u001b[39m    \u001b[90m// Clear existing data\u001b[39m\n    \u001b[90m 18| \u001b[39m    \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mdeleteMany\u001b[39m({})\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mReferenceError\u001b[22m: usersCollection is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m16:5\u001b[22m\u001b[39m\n    \u001b[90m 14| \u001b[39m  \u001b[34mbeforeEach\u001b[39m(\u001b[35masync\u001b[39m () \u001b[33m=>\u001b[39m {\n    \u001b[90m 15| \u001b[39m    \u001b[35mconst\u001b[39m database \u001b[33m=\u001b[39m client\u001b[33m.\u001b[39m\u001b[34mdb\u001b[39m(\u001b[33mPROJ_ENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mMONGO_DB_NAME\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 16| \u001b[39m    usersCollection \u001b[33m=\u001b[39m database\u001b[33m.\u001b[39m\u001b[34mcollection\u001b[39m(\u001b[32m\"users\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m    \u001b[31m^\u001b[39m\n    \u001b[90m 17| \u001b[39m    \u001b[90m// Clear existing data\u001b[39m\n    \u001b[90m 18| \u001b[39m    \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mdeleteMany\u001b[39m({})\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Warning: it's best to only add files that need changes to the chat.  
+> https://aider.chat/docs/troubleshooting/edit-errors.html  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 43 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### Following shell commands execution failed (check .aider.chat.history.md file) :  
+####    command: vitest run  
+####  error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mReferenceError\u001b[22m: usersCollection is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m16:5\u001b[22m\u001b[39m\n    \u001b[90m 14| \u001b[39m  \u001b[34mbeforeEach\u001b[39m(\u001b[35masync\u001b[39m () \u001b[33m=>\u001b[39m {\n    \u001b[90m 15| \u001b[39m    \u001b[35mconst\u001b[39m database \u001b[33m=\u001b[39m client\u001b[33m.\u001b[39m\u001b[34mdb\u001b[39m(\u001b[33mPROJ_ENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mMONGO_DB_NAME\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 16| \u001b[39m    usersCollection \u001b[33m=\u001b[39m database\u001b[33m.\u001b[39m\u001b[34mcollection\u001b[39m(\u001b[32m\"users\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m    \u001b[31m^\u001b[39m\n    \u001b[90m 17| \u001b[39m    \u001b[90m// Clear existing data\u001b[39m\n    \u001b[90m 18| \u001b[39m    \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mdeleteMany\u001b[39m({})\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mReferenceError\u001b[22m: usersCollection is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m16:5\u001b[22m\u001b[39m\n    \u001b[90m 14| \u001b[39m  \u001b[34mbeforeEach\u001b[39m(\u001b[35masync\u001b[39m () \u001b[33m=>\u001b[39m {\n    \u001b[90m 15| \u001b[39m    \u001b[35mconst\u001b[39m database \u001b[33m=\u001b[39m client\u001b[33m.\u001b[39m\u001b[34mdb\u001b[39m(\u001b[33mPROJ_ENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mMONGO_DB_NAME\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 16| \u001b[39m    usersCollection \u001b[33m=\u001b[39m database\u001b[33m.\u001b[39m\u001b[34mcollection\u001b[39m(\u001b[32m\"users\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m    \u001b[31m^\u001b[39m\n    \u001b[90m 17| \u001b[39m    \u001b[90m// Clear existing data\u001b[39m\n    \u001b[90m 18| \u001b[39m    \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mdeleteMany\u001b[39m({})\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}  
+> Unable to find a fencing strategy! Falling back to: ```...```  
+
+The error indicates that the `usersCollection` variable is not defined in the scope where it's being used. Let's fix this by ensuring the `usersCollection` is defined before we attempt to clear it.
+
+Here is the corrected test file:
+
+tests/unit/database/user-seed.test.ts
+```typescript
+<<<<<<< SEARCH
+  let client: MongoClient;
+  let usersCollection: any;
+
+  beforeAll(async () => {
+    client = new MongoClient(PROJ_ENV.MONGO_URI);
+    await client.connect();
+    const database = client.db(PROJ_ENV.MONGO_DB_NAME);
+    usersCollection = database.collection("users");
+  });
+
+  beforeEach(async () => {
+    // Clear existing data
+    await usersCollection.deleteMany({});
+  });
+
+  afterAll(async () => {
+    await client.close();
+  });
+
+  it("should seed users into the database", async () => {
+    // Seed users
+    await seedUsers();
+
+    // Verify users are seeded
+    const users = await usersCollection.find({}).toArray();
+    expect(users.length).toBe(2);
+    expect(users[0]).toHaveProperty("name", "John Doe");
+    expect(users[1]).toHaveProperty("name", "Jane Smith");
+  });
+=======
+  let client: MongoClient;
+  let usersCollection: any;
+
+  beforeAll(async () => {
+    client = new MongoClient(PROJ_ENV.MONGO_URI);
+    await client.connect();
+    const database = client.db(PROJ_ENV.MONGO_DB_NAME);
+    usersCollection = database.collection("users");
+  });
+
+  beforeEach(async () => {
+    // Clear existing data
+    await usersCollection.deleteMany({});
+  });
+
+  afterAll(async () => {
+    await client.close();
+  });
+
+  it("should seed users into the database", async () => {
+    // Seed users
+    await seedUsers();
+
+    // Verify users are seeded
+    const users = await usersCollection.find({}).toArray();
+    expect(users.length).toBe(2);
+    expect(users[0]).toHaveProperty("name", "John Doe");
+    expect(users[1]).toHaveProperty("name", "Jane Smith");
+  });
+>>>>>>> REPLACE
+```
+
+Please apply this change and then try running the tests again with:
+
+```bash
+vitest run
+```
+
+> Tokens: 58k sent, 453 received. Cost: $0.15 message, $0.15 session.  
+> tests/unit/database/user-seed.test.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+> Unable to find a fencing strategy! Falling back to: ```...```  
+
+Let's ensure the `usersCollection` is defined correctly in the test file. Here is the necessary change:
+
+tests/unit/database/user-seed.test.ts
+```typescript
+<<<<<<< SEARCH
+  let client: MongoClient;
+
+  beforeAll(async () => {
+    client = new MongoClient(PROJ_ENV.MONGO_URI);
+    await client.connect();
+  });
+
+  beforeEach(async () => {
+    const database = client.db(PROJ_ENV.MONGO_DB_NAME);
+    usersCollection = database.collection("users");
+    // Clear existing data
+    await usersCollection.deleteMany({});
+  });
+
+  afterAll(async () => {
+    await client.close();
+  });
+
+  it("should seed users into the database", async () => {
+    // Seed users
+    await seedUsers();
+
+    // Verify users are seeded
+    const users = await usersCollection.find({}).toArray();
+    expect(users.length).toBe(2);
+    expect(users[0]).toHaveProperty("name", "John Doe");
+    expect(users[1]).toHaveProperty("name", "Jane Smith");
+  });
+=======
+  let client: MongoClient;
+  let usersCollection: any;
+
+  beforeAll(async () => {
+    client = new MongoClient(PROJ_ENV.MONGO_URI);
+    await client.connect();
+    const database = client.db(PROJ_ENV.MONGO_DB_NAME);
+    usersCollection = database.collection("users");
+  });
+
+  beforeEach(async () => {
+    // Clear existing data
+    await usersCollection.deleteMany({});
+  });
+
+  afterAll(async () => {
+    await client.close();
+  });
+
+  it("should seed users into the database", async () => {
+    // Seed users
+    await seedUsers();
+
+    // Verify users are seeded
+    const users = await usersCollection.find({}).toArray();
+    expect(users.length).toBe(2);
+    expect(users[0]).toHaveProperty("name", "John Doe");
+    expect(users[1]).toHaveProperty("name", "Jane Smith");
+  });
+>>>>>>> REPLACE
+```
+
+Please apply this change and then try running the tests again with:
+
+```bash
+vitest run
+```
+
+> Tokens: 59k sent, 419 received. Cost: $0.15 message, $0.30 session.  
+> Applied edit to tests/unit/database/user-seed.test.ts  
+> Commit 21f7f7c fix: define usersCollection before usage in user-seed test file  
+> vitest run  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ vitest run
+ output:
+ 
+[1m[46m RUN [49m[22m [36mv3.2.4 [39m[90m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie[39m
+
+[90mstdout[2m | src/utils/logger/index.test.ts
+[22m[39m[dotenv@17.2.1] injecting env (1) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+
+[90mstdout[2m | src/utils/logger/index.test.ts
+[22m[39m[dotenv@17.2.1] injecting env (0) from .env.test -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+
+[90mstdout[2m | tests/unit/database/user-seed.test.ts
+[22m[39m[dotenv@17.2.1] injecting env (1) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+
+[90mstdout[2m | tests/unit/database/user-seed.test.ts
+[22m[39m[dotenv@17.2.1] injecting env (0) from .env.test -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mgetPureError[2m > [22m[2mshould handle complex objects in getPureError
+[22m[39mresult {
+  message: [32m'Complex error'[39m,
+  stack: [32m'Error stack'[39m,
+  code: [33m500[39m,
+  nested: { property: [32m'value'[39m, array: [ [33m1[39m, [33m2[39m, [33m3[39m ] }
+}
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mlog[2m > [22m[2mshould not throw when called with message
+[22m[39mTest log message
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mlog[2m > [22m[2mshould not throw when called with message and details
+[22m[39mTest log message
+{
+    "test": "data"
+}
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mdebug[2m > [22m[2mshould not throw when called with message
+[22m[39mTest debug message
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mdebug[2m > [22m[2mshould not throw when called with message and details
+[22m[39mTest debug message
+{
+    "debug": "info"
+}
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2minfo[2m > [22m[2mshould not throw when called with message
+[22m[39mTest info message
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2minfo[2m > [22m[2mshould not throw when called with message and details
+[22m[39mTest info message
+{
+    "info": "data"
+}
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2merror[2m > [22m[2mshould not throw when called with message
+[22m[39mTest error message
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2merror[2m > [22m[2mshould not throw when called with message and details
+[22m[39mTest error message
+{
+    "error": "details"
+}
+
+ [32m✓[39m src/utils/logger/index.test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+[90mstdout[2m | tests/unit/database/user-seed.test.ts[2m > [22m[2mUser Seed[2m > [22m[2mshould seed users into the database
+[22m[39mSample users seeded successfully.
+
+[90mstdout[2m | tests/unit/database/user-seed.test.ts[2m > [22m[2mUser Seed[2m > [22m[2mshould seed users into the database
+[22m[39mSample users seeded successfully.
+
+ [32m✓[39m tests/unit/database/user-seed.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 41[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m15 passed[39m[22m[90m (15)[39m
+[2m   Start at [22m 22:31:05
+[2m   Duration [22m 531ms[2m (transform 44ms, setup 43ms, collect 134ms, tests 50ms, environment 0ms, prepare 126ms)[22m
+
+
+</shell-commands-results>
+
