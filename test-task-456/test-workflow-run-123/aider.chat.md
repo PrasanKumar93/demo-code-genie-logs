@@ -377,3 +377,143 @@ User has manually run below shell commands:
  {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31553:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31550:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m9019:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31351:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m26438:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31553:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31550:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m9019:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31351:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m26438:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-02 22:25:43
+
+> /Library/Frameworks/Python.framework/Versions/3.12/bin/aider --yes-always --message Following shell commands execution failed (check .aider.chat.history.md file) :
+   command: vitest run
+ error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31553:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31550:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m9019:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31351:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m26438:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31553:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31550:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m9019:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31351:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m26438:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 42 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### Following shell commands execution failed (check .aider.chat.history.md file) :  
+####    command: vitest run  
+####  error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31553:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31550:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m9019:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31351:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m26438:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31553:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31550:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m9019:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m31351:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform ../sdlc-genie-backend/node_modules/vite/dist/node/chunks/dep-CMEinpL-.js:\u001b[2m26438:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}  
+> tests/unit/database/user-seed.test.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+
+The error indicates that there is an issue with the JSON syntax in the `sample-users.json` file. Let's correct the JSON syntax.
+
+Here is the corrected content for `src/database/seeds/sample-users.json`:
+
+src/database/seeds/sample-users.json
+<code>json
+<<<<<<< SEARCH
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+=======
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+>>>>>>> REPLACE
+</code>
+
+Please apply this change and then try running the tests again with:
+
+```bash
+vitest run
+```
+
+> Tokens: 16k sent, 214 received. Cost: $0.04 message, $0.04 session.  
+> src/database/seeds/sample-users.json  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+
+Let's correct the JSON syntax in the `src/database/seeds/sample-users.json` file. Here is the corrected content:
+
+src/database/seeds/sample-users.json
+<pre>json
+<<<<<<< SEARCH
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+=======
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+>>>>>>> REPLACE
+</pre>
+
+Please apply this change and then try running the tests again with:
+
+```bash
+vitest run
+```
+
+> Tokens: 17k sent, 257 received. Cost: $0.05 message, $0.09 session.  
+> Applied edit to src/database/seeds/sample-users.json  
+> Commit a7bd6dc fix: correct JSON syntax in sample-users.json to resolve parsing error  
+> vitest run  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ vitest run
+ error:
+ {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mMongoBulkWriteError\u001b[22m: E11000 duplicate key error collection: dbSdlcGenie.users index: _id_ dup key: { _id: ObjectId('692f1a28f4c1268d4b472e3b') }\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m OrderedBulkOperation.handleWriteError node_modules/mongodb/src/bulk/common.ts:\u001b[2m1274:9\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m resultHandler node_modules/mongodb/src/bulk/common.ts:\u001b[2m586:23\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m node_modules/mongodb/src/utils.ts:\u001b[2m379:15\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mMongoBulkWriteError\u001b[22m: E11000 duplicate key error collection: dbSdlcGenie.users index: _id_ dup key: { _id: ObjectId('692f1a28f4c1268d4b472e3b') }\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m OrderedBulkOperation.handleWriteError node_modules/mongodb/src/bulk/common.ts:\u001b[2m1274:9\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m resultHandler node_modules/mongodb/src/bulk/common.ts:\u001b[2m586:23\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m node_modules/mongodb/src/utils.ts:\u001b[2m379:15\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
+</shell-commands-results>
+
