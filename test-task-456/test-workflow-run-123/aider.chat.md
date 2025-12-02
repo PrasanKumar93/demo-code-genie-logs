@@ -751,3 +751,226 @@ User has manually run below shell commands:
  {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31645:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31642:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m9111:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31443:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m26530:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31645:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31642:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m9111:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31443:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m26530:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-02 22:37:21
+
+> /Library/Frameworks/Python.framework/Versions/3.12/bin/aider --yes-always --message Following shell commands execution failed (check .aider.chat.history.md file) :
+   command: npm test
+ error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31645:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31642:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m9111:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31443:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m26530:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31645:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31642:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m9111:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31443:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m26530:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Warning: it's best to only add files that need changes to the chat.  
+> https://aider.chat/docs/troubleshooting/edit-errors.html  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 43 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### Following shell commands execution failed (check .aider.chat.history.md file) :  
+####    command: npm test  
+####  error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31645:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31642:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m9111:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31443:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m26530:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31645:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31642:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m9111:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31443:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m26530:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}  
+> tests/unit/database/user-seed.test.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+> Unable to find a fencing strategy! Falling back to: ```...```  
+
+The error message indicates that there is an issue with the JSON syntax in the `sample-users.json` file. Let's correct the JSON syntax.
+
+Here is the corrected JSON file:
+
+src/database/seeds/sample-users.json
+```json
+<<<<<<< SEARCH
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+=======
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+>>>>>>> REPLACE
+```
+
+Please apply this change and then try running the tests again with:
+
+```bash
+npm test
+```
+
+> Tokens: 36k sent, 202 received. Cost: $0.09 message, $0.09 session.  
+> src/database/seeds/sample-users.json  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+> Unable to find a fencing strategy! Falling back to: ```...```  
+
+The error message indicates that there is an issue with the JSON syntax in the `sample-users.json` file. It seems like there is a duplicate array in the file. Let's correct the JSON syntax.
+
+Here is the corrected JSON file:
+
+src/database/seeds/sample-users.json
+```json
+<<<<<<< SEARCH
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+=======
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 25
+  }
+]
+>>>>>>> REPLACE
+```
+
+Please apply this change and then try running the tests again with:
+
+```bash
+npm test
+```
+
+> Tokens: 37k sent, 277 received. Cost: $0.09 message, $0.19 session.  
+> Applied edit to src/database/seeds/sample-users.json  
+> Commit 523a29e fix: correct JSON syntax in sample-users.json to resolve test failure  
+> npm test  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ npm test
+ output:
+ 
+> demo-code-genie@1.0.0 test
+> vitest
+
+
+[1m[46m RUN [49m[22m [36mv3.2.4 [39m[90m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie[39m
+
+[90mstdout[2m | src/utils/logger/index.test.ts
+[22m[39m[dotenv@17.2.1] injecting env (1) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+
+[90mstdout[2m | tests/unit/database/user-seed.test.ts
+[22m[39m[dotenv@17.2.1] injecting env (1) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+
+[90mstdout[2m | src/utils/logger/index.test.ts
+[22m[39m[dotenv@17.2.1] injecting env (0) from .env.test -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+
+[90mstdout[2m | tests/unit/database/user-seed.test.ts
+[22m[39m[dotenv@17.2.1] injecting env (0) from .env.test -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mgetPureError[2m > [22m[2mshould handle complex objects in getPureError
+[22m[39mresult {
+  message: [32m'Complex error'[39m,
+  stack: [32m'Error stack'[39m,
+  code: [33m500[39m,
+  nested: { property: [32m'value'[39m, array: [ [33m1[39m, [33m2[39m, [33m3[39m ] }
+}
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mlog[2m > [22m[2mshould not throw when called with message
+[22m[39mTest log message
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mlog[2m > [22m[2mshould not throw when called with message and details
+[22m[39mTest log message
+{
+    "test": "data"
+}
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mdebug[2m > [22m[2mshould not throw when called with message
+[22m[39mTest debug message
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2mdebug[2m > [22m[2mshould not throw when called with message and details
+[22m[39mTest debug message
+{
+    "debug": "info"
+}
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2minfo[2m > [22m[2mshould not throw when called with message
+[22m[39mTest info message
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2minfo[2m > [22m[2mshould not throw when called with message and details
+[22m[39mTest info message
+{
+    "info": "data"
+}
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2merror[2m > [22m[2mshould not throw when called with message
+[22m[39mTest error message
+
+[90mstdout[2m | src/utils/logger/index.test.ts[2m > [22m[2mLoggerCls[2m > [22m[2merror[2m > [22m[2mshould not throw when called with message and details
+[22m[39mTest error message
+{
+    "error": "details"
+}
+
+ [32m✓[39m src/utils/logger/index.test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+[90mstdout[2m | tests/unit/database/user-seed.test.ts[2m > [22m[2mUser Seed[2m > [22m[2mshould seed users into the database
+[22m[39mSample users seeded successfully.
+
+[90mstdout[2m | tests/unit/database/user-seed.test.ts[2m > [22m[2mUser Seed[2m > [22m[2mshould seed users into the database
+[22m[39mSample users seeded successfully.
+
+ [32m✓[39m tests/unit/database/user-seed.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 45[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m15 passed[39m[22m[90m (15)[39m
+[2m   Start at [22m 22:38:05
+[2m   Duration [22m 572ms[2m (transform 63ms, setup 58ms, collect 164ms, tests 56ms, environment 0ms, prepare 194ms)[22m
+
+
+</shell-commands-results>
+
