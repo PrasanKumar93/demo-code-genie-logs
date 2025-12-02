@@ -1,0 +1,34 @@
+
+# 2025-12-02 22:25:09.478205
++You are an AI coding assistant working on a Node.js + TypeScript project.
++When generating code, you must strictly follow the rules, conventions, and constraints defined in the following documents:
++	- Folder structure: docs/technical/folder-structure.md
++	- Tech stack: docs/technical/tech-stack.md
++	- Software Requirements Specification (SRS): docs/srs/srs-llms.md
++    - Use proper imports with js extensions (e.g. import { User } from '../models/User.js') for typescript files
++
++Instructions:
++	1.	Always consult and adhere to the folder structure when creating, modifying, or referencing files.
++	2.	Use the libraries, frameworks, and patterns defined in the tech stack document.
++	3.	Ensure all features, functions, and naming conventions align with the SRS requirements.
++	4.	If any requirement is unclear, ask for clarification before proceeding.
++
++Create some sample users json with few fields, and seed them in MongoDB new users collection using simple node's mongo package.
++Also create unit tests for the generated code
+
+# 2025-12-02 22:25:09.479187
++You are an AI coding assistant working on a Node.js + TypeScript project.
++When generating code, you must strictly follow the rules, conventions, and constraints defined in the following documents:
++	- Folder structure: docs/technical/folder-structure.md
++	- Tech stack: docs/technical/tech-stack.md
++	- Software Requirements Specification (SRS): docs/srs/srs-llms.md
++    - Use proper imports with js extensions (e.g. import { User } from '../models/User.js') for typescript files
++
++Instructions:
++	1.	Always consult and adhere to the folder structure when creating, modifying, or referencing files.
++	2.	Use the libraries, frameworks, and patterns defined in the tech stack document.
++	3.	Ensure all features, functions, and naming conventions align with the SRS requirements.
++	4.	If any requirement is unclear, ask for clarification before proceeding.
++
++Create some sample users json with few fields, and seed them in MongoDB new users collection using simple node's mongo package.
++Also create unit tests for the generated code
