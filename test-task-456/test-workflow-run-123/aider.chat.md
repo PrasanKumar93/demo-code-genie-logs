@@ -695,3 +695,101 @@ User has manually run below shell commands:
  {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mAssertionError\u001b[22m: expected 4 to be 2 // Object.is equality\u001b[39m\n\n\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- 2\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m27:26\u001b[22m\u001b[39m\n    \u001b[90m 25| \u001b[39m    \u001b[90m// Verify users are seeded\u001b[39m\n    \u001b[90m 26| \u001b[39m    \u001b[35mconst\u001b[39m users \u001b[33m=\u001b[39m \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mfind\u001b[39m({})\u001b[33m.\u001b[39m\u001b[34mtoArray\u001b[39m()\u001b[33m;\u001b[39m\n    \u001b[90m 27| \u001b[39m    \u001b[34mexpect\u001b[39m(users\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39m\u001b[34mtoBe\u001b[39m(\u001b[34m2\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m 28| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m0\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"John Doe\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 29| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m1\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Jane Smith\"\u001b[39m)\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mAssertionError\u001b[22m: expected 4 to be 2 // Object.is equality\u001b[39m\n\n\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- 2\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m27:26\u001b[22m\u001b[39m\n    \u001b[90m 25| \u001b[39m    \u001b[90m// Verify users are seeded\u001b[39m\n    \u001b[90m 26| \u001b[39m    \u001b[35mconst\u001b[39m users \u001b[33m=\u001b[39m \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mfind\u001b[39m({})\u001b[33m.\u001b[39m\u001b[34mtoArray\u001b[39m()\u001b[33m;\u001b[39m\n    \u001b[90m 27| \u001b[39m    \u001b[34mexpect\u001b[39m(users\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39m\u001b[34mtoBe\u001b[39m(\u001b[34m2\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m 28| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m0\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"John Doe\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 29| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m1\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Jane Smith\"\u001b[39m)\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-02 22:26:37
+
+> /Library/Frameworks/Python.framework/Versions/3.12/bin/aider --yes-always --message Following shell commands execution failed (check .aider.chat.history.md file) :
+   command: vitest run
+ error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mAssertionError\u001b[22m: expected 4 to be 2 // Object.is equality\u001b[39m\n\n\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- 2\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m27:26\u001b[22m\u001b[39m\n    \u001b[90m 25| \u001b[39m    \u001b[90m// Verify users are seeded\u001b[39m\n    \u001b[90m 26| \u001b[39m    \u001b[35mconst\u001b[39m users \u001b[33m=\u001b[39m \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mfind\u001b[39m({})\u001b[33m.\u001b[39m\u001b[34mtoArray\u001b[39m()\u001b[33m;\u001b[39m\n    \u001b[90m 27| \u001b[39m    \u001b[34mexpect\u001b[39m(users\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39m\u001b[34mtoBe\u001b[39m(\u001b[34m2\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m 28| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m0\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"John Doe\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 29| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m1\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Jane Smith\"\u001b[39m)\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mAssertionError\u001b[22m: expected 4 to be 2 // Object.is equality\u001b[39m\n\n\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- 2\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m27:26\u001b[22m\u001b[39m\n    \u001b[90m 25| \u001b[39m    \u001b[90m// Verify users are seeded\u001b[39m\n    \u001b[90m 26| \u001b[39m    \u001b[35mconst\u001b[39m users \u001b[33m=\u001b[39m \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mfind\u001b[39m({})\u001b[33m.\u001b[39m\u001b[34mtoArray\u001b[39m()\u001b[33m;\u001b[39m\n    \u001b[90m 27| \u001b[39m    \u001b[34mexpect\u001b[39m(users\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39m\u001b[34mtoBe\u001b[39m(\u001b[34m2\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m 28| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m0\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"John Doe\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 29| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m1\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Jane Smith\"\u001b[39m)\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Warning: it's best to only add files that need changes to the chat.  
+> https://aider.chat/docs/troubleshooting/edit-errors.html  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 42 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### Following shell commands execution failed (check .aider.chat.history.md file) :  
+####    command: vitest run  
+####  error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mAssertionError\u001b[22m: expected 4 to be 2 // Object.is equality\u001b[39m\n\n\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- 2\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m27:26\u001b[22m\u001b[39m\n    \u001b[90m 25| \u001b[39m    \u001b[90m// Verify users are seeded\u001b[39m\n    \u001b[90m 26| \u001b[39m    \u001b[35mconst\u001b[39m users \u001b[33m=\u001b[39m \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mfind\u001b[39m({})\u001b[33m.\u001b[39m\u001b[34mtoArray\u001b[39m()\u001b[33m;\u001b[39m\n    \u001b[90m 27| \u001b[39m    \u001b[34mexpect\u001b[39m(users\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39m\u001b[34mtoBe\u001b[39m(\u001b[34m2\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m 28| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m0\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"John Doe\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 29| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m1\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Jane Smith\"\u001b[39m)\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\u001b[2m > \u001b[22mshould seed users into the database\n\u001b[31m\u001b[1mAssertionError\u001b[22m: expected 4 to be 2 // Object.is equality\u001b[39m\n\n\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- 2\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m27:26\u001b[22m\u001b[39m\n    \u001b[90m 25| \u001b[39m    \u001b[90m// Verify users are seeded\u001b[39m\n    \u001b[90m 26| \u001b[39m    \u001b[35mconst\u001b[39m users \u001b[33m=\u001b[39m \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mfind\u001b[39m({})\u001b[33m.\u001b[39m\u001b[34mtoArray\u001b[39m()\u001b[33m;\u001b[39m\n    \u001b[90m 27| \u001b[39m    \u001b[34mexpect\u001b[39m(users\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39m\u001b[34mtoBe\u001b[39m(\u001b[34m2\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m 28| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m0\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"John Doe\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m 29| \u001b[39m    \u001b[34mexpect\u001b[39m(users[\u001b[34m1\u001b[39m])\u001b[33m.\u001b[39m\u001b[34mtoHaveProperty\u001b[39m(\u001b[32m\"name\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Jane Smith\"\u001b[39m)\u001b[33m;\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}  
+> Unable to find a fencing strategy! Falling back to: ```...```  
+
+The error indicates that the test is expecting 2 users to be seeded, but 4 users are found in the database. This discrepancy might be due to leftover data from previous test runs. To ensure a clean state before each test, we should clear the database collection at the start of the test.
+
+Let's update the test file to clear the users collection before seeding:
+
+tests/unit/database/user-seed.test.ts
+```typescript
+<<<<<<< SEARCH
+  });
+=======
+    // Clear existing data
+    await usersCollection.deleteMany({});
+  });
+>>>>>>> REPLACE
+```
+
+Please apply this change and then try running the tests again with:
+
+```bash
+vitest run
+```
+
+> Tokens: 29k sent, 133 received. Cost: $0.07 message, $0.07 session.  
+> tests/unit/database/user-seed.test.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+> Unable to find a fencing strategy! Falling back to: ```...```  
+
+Let's update the test file to ensure the users collection is cleared before each test to avoid leftover data affecting the results.
+
+tests/unit/database/user-seed.test.ts
+```typescript
+<<<<<<< SEARCH
+  });
+
+  it("should seed users into the database", async () => {
+    const database = client.db(PROJ_ENV.MONGO_DB_NAME);
+    const usersCollection = database.collection("users");
+=======
+    // Clear existing data
+    await usersCollection.deleteMany({});
+  });
+
+  it("should seed users into the database", async () => {
+    const database = client.db(PROJ_ENV.MONGO_DB_NAME);
+    const usersCollection = database.collection("users");
+>>>>>>> REPLACE
+```
+
+Please apply this change and then try running the tests again with:
+
+```bash
+vitest run
+```
+
+> Tokens: 30k sent, 159 received. Cost: $0.08 message, $0.15 session.  
+> Applied edit to tests/unit/database/user-seed.test.ts  
+> Commit 2fa2d7f test: Clear users collection before seeding in user-seed test case  
+> vitest run  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ vitest run
+ error:
+ {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\n\u001b[31m\u001b[1mReferenceError\u001b[22m: usersCollection is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m17:5\u001b[22m\u001b[39m\n    \u001b[90m 15| \u001b[39m    \u001b[35mawait\u001b[39m client\u001b[33m.\u001b[39m\u001b[34mclose\u001b[39m()\u001b[33m;\u001b[39m\n    \u001b[90m 16| \u001b[39m    \u001b[90m// Clear existing data\u001b[39m\n    \u001b[90m 17| \u001b[39m    \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mdeleteMany\u001b[39m({})\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m    \u001b[31m^\u001b[39m\n    \u001b[90m 18| \u001b[39m  })\u001b[33m;\u001b[39m\n    \u001b[90m 19| \u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m > \u001b[22mUser Seed\n\u001b[31m\u001b[1mReferenceError\u001b[22m: usersCollection is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m17:5\u001b[22m\u001b[39m\n    \u001b[90m 15| \u001b[39m    \u001b[35mawait\u001b[39m client\u001b[33m.\u001b[39m\u001b[34mclose\u001b[39m()\u001b[33m;\u001b[39m\n    \u001b[90m 16| \u001b[39m    \u001b[90m// Clear existing data\u001b[39m\n    \u001b[90m 17| \u001b[39m    \u001b[35mawait\u001b[39m usersCollection\u001b[33m.\u001b[39m\u001b[34mdeleteMany\u001b[39m({})\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m    \u001b[31m^\u001b[39m\n    \u001b[90m 18| \u001b[39m  })\u001b[33m;\u001b[39m\n    \u001b[90m 19| \u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
+</shell-commands-results>
+
