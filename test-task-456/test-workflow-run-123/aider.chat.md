@@ -612,3 +612,142 @@ User has manually run below shell commands:
  {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mReferenceError\u001b[22m: readFileSync is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/database/seeds/user-seed.ts:\u001b[2m7:26\u001b[22m\u001b[39m\n    \u001b[90m  5| \u001b[39m\n    \u001b[90m  6| \u001b[39m\u001b[35mconst\u001b[39m sampleUsersPath \u001b[33m=\u001b[39m path\u001b[33m.\u001b[39m\u001b[34mresolve\u001b[39m(__dirname\u001b[33m,\u001b[39m \u001b[32m\"sample-users.json\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m  7| \u001b[39m\u001b[35mconst\u001b[39m sampleUsers \u001b[33m=\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39m\u001b[34mparse\u001b[39m(\u001b[34mreadFileSync\u001b[39m(sampleUsersPath\u001b[33m,\u001b[39m \u001b[32m\"utf-8\"\u001b[39m))\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m  8| \u001b[39m\n    \u001b[90m  9| \u001b[39m\u001b[35mexport\u001b[39m \u001b[35masync\u001b[39m \u001b[35mfunction\u001b[39m \u001b[34mseedUsers\u001b[39m() {\n\u001b[90m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m3:1\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mReferenceError\u001b[22m: readFileSync is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/database/seeds/user-seed.ts:\u001b[2m7:26\u001b[22m\u001b[39m\n    \u001b[90m  5| \u001b[39m\n    \u001b[90m  6| \u001b[39m\u001b[35mconst\u001b[39m sampleUsersPath \u001b[33m=\u001b[39m path\u001b[33m.\u001b[39m\u001b[34mresolve\u001b[39m(__dirname\u001b[33m,\u001b[39m \u001b[32m\"sample-users.json\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m  7| \u001b[39m\u001b[35mconst\u001b[39m sampleUsers \u001b[33m=\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39m\u001b[34mparse\u001b[39m(\u001b[34mreadFileSync\u001b[39m(sampleUsersPath\u001b[33m,\u001b[39m \u001b[32m\"utf-8\"\u001b[39m))\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m  8| \u001b[39m\n    \u001b[90m  9| \u001b[39m\u001b[35mexport\u001b[39m \u001b[35masync\u001b[39m \u001b[35mfunction\u001b[39m \u001b[34mseedUsers\u001b[39m() {\n\u001b[90m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m3:1\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-02 22:36:58
+
+> /Library/Frameworks/Python.framework/Versions/3.12/bin/aider --yes-always --message Following shell commands execution failed (check .aider.chat.history.md file) :
+   command: npm test
+ error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mReferenceError\u001b[22m: readFileSync is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/database/seeds/user-seed.ts:\u001b[2m7:26\u001b[22m\u001b[39m\n    \u001b[90m  5| \u001b[39m\n    \u001b[90m  6| \u001b[39m\u001b[35mconst\u001b[39m sampleUsersPath \u001b[33m=\u001b[39m path\u001b[33m.\u001b[39m\u001b[34mresolve\u001b[39m(__dirname\u001b[33m,\u001b[39m \u001b[32m\"sample-users.json\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m  7| \u001b[39m\u001b[35mconst\u001b[39m sampleUsers \u001b[33m=\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39m\u001b[34mparse\u001b[39m(\u001b[34mreadFileSync\u001b[39m(sampleUsersPath\u001b[33m,\u001b[39m \u001b[32m\"utf-8\"\u001b[39m))\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m  8| \u001b[39m\n    \u001b[90m  9| \u001b[39m\u001b[35mexport\u001b[39m \u001b[35masync\u001b[39m \u001b[35mfunction\u001b[39m \u001b[34mseedUsers\u001b[39m() {\n\u001b[90m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m3:1\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mReferenceError\u001b[22m: readFileSync is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/database/seeds/user-seed.ts:\u001b[2m7:26\u001b[22m\u001b[39m\n    \u001b[90m  5| \u001b[39m\n    \u001b[90m  6| \u001b[39m\u001b[35mconst\u001b[39m sampleUsersPath \u001b[33m=\u001b[39m path\u001b[33m.\u001b[39m\u001b[34mresolve\u001b[39m(__dirname\u001b[33m,\u001b[39m \u001b[32m\"sample-users.json\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m  7| \u001b[39m\u001b[35mconst\u001b[39m sampleUsers \u001b[33m=\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39m\u001b[34mparse\u001b[39m(\u001b[34mreadFileSync\u001b[39m(sampleUsersPath\u001b[33m,\u001b[39m \u001b[32m\"utf-8\"\u001b[39m))\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m  8| \u001b[39m\n    \u001b[90m  9| \u001b[39m\u001b[35mexport\u001b[39m \u001b[35masync\u001b[39m \u001b[35mfunction\u001b[39m \u001b[34mseedUsers\u001b[39m() {\n\u001b[90m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m3:1\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Warning: it's best to only add files that need changes to the chat.  
+> https://aider.chat/docs/troubleshooting/edit-errors.html  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 43 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### Following shell commands execution failed (check .aider.chat.history.md file) :  
+####    command: npm test  
+####  error: {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mReferenceError\u001b[22m: readFileSync is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/database/seeds/user-seed.ts:\u001b[2m7:26\u001b[22m\u001b[39m\n    \u001b[90m  5| \u001b[39m\n    \u001b[90m  6| \u001b[39m\u001b[35mconst\u001b[39m sampleUsersPath \u001b[33m=\u001b[39m path\u001b[33m.\u001b[39m\u001b[34mresolve\u001b[39m(__dirname\u001b[33m,\u001b[39m \u001b[32m\"sample-users.json\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m  7| \u001b[39m\u001b[35mconst\u001b[39m sampleUsers \u001b[33m=\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39m\u001b[34mparse\u001b[39m(\u001b[34mreadFileSync\u001b[39m(sampleUsersPath\u001b[33m,\u001b[39m \u001b[32m\"utf-8\"\u001b[39m))\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m  8| \u001b[39m\n    \u001b[90m  9| \u001b[39m\u001b[35mexport\u001b[39m \u001b[35masync\u001b[39m \u001b[35mfunction\u001b[39m \u001b[34mseedUsers\u001b[39m() {\n\u001b[90m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m3:1\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mReferenceError\u001b[22m: readFileSync is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/database/seeds/user-seed.ts:\u001b[2m7:26\u001b[22m\u001b[39m\n    \u001b[90m  5| \u001b[39m\n    \u001b[90m  6| \u001b[39m\u001b[35mconst\u001b[39m sampleUsersPath \u001b[33m=\u001b[39m path\u001b[33m.\u001b[39m\u001b[34mresolve\u001b[39m(__dirname\u001b[33m,\u001b[39m \u001b[32m\"sample-users.json\"\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[90m  7| \u001b[39m\u001b[35mconst\u001b[39m sampleUsers \u001b[33m=\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39m\u001b[34mparse\u001b[39m(\u001b[34mreadFileSync\u001b[39m(sampleUsersPath\u001b[33m,\u001b[39m \u001b[32m\"utf-8\"\u001b[39m))\u001b[33m;\u001b[39m\n    \u001b[90m   | \u001b[39m                         \u001b[31m^\u001b[39m\n    \u001b[90m  8| \u001b[39m\n    \u001b[90m  9| \u001b[39m\u001b[35mexport\u001b[39m \u001b[35masync\u001b[39m \u001b[35mfunction\u001b[39m \u001b[34mseedUsers\u001b[39m() {\n\u001b[90m \u001b[2m❯\u001b[22m tests/unit/database/user-seed.test.ts:\u001b[2m3:1\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}  
+> tests/unit/database/user-seed.test.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+> Unable to find a fencing strategy! Falling back to: ```...```  
+
+The error indicates that `readFileSync` is not defined in the `src/database/seeds/user-seed.ts` file. This is because the `fs` module, which provides `readFileSync`, is not imported. However, since we are using the `assert { type: "json" }` syntax to import JSON files directly, we don't need `readFileSync` or `fs` at all.
+
+Let's correct the code by removing the unnecessary `fs` and `path` imports and ensure the JSON import is handled correctly.
+
+Here is the necessary change:
+
+src/database/seeds/user-seed.ts
+```typescript
+<<<<<<< SEARCH
+import path from "path";
+import PROJ_ENV from "../../config.js";
+import sampleUsers from "./sample-users.json" assert { type: "json" };
+
+export async function seedUsers() {
+  const client = new MongoClient(PROJ_ENV.MONGO_URI);
+  try {
+    await client.connect();
+    const database = client.db(PROJ_ENV.MONGO_DB_NAME);
+    const usersCollection = database.collection("users");
+
+    // Clear existing data and insert new sample users
+    await usersCollection.deleteMany({});
+    await usersCollection.insertMany(sampleUsers);
+    console.log("Sample users seeded successfully.");
+  } finally {
+    await client.close();
+  }
+}
+
+seedUsers().catch(console.error);
+=======
+import { MongoClient } from "mongodb";
+import PROJ_ENV from "../../config.js";
+import sampleUsers from "./sample-users.json" assert { type: "json" };
+
+export async function seedUsers() {
+  const client = new MongoClient(PROJ_ENV.MONGO_URI);
+  try {
+    await client.connect();
+    const database = client.db(PROJ_ENV.MONGO_DB_NAME);
+    const usersCollection = database.collection("users");
+
+    // Clear existing data and insert new sample users
+    await usersCollection.deleteMany({});
+    await usersCollection.insertMany(sampleUsers);
+    console.log("Sample users seeded successfully.");
+  } finally {
+    await client.close();
+  }
+}
+
+seedUsers().catch(console.error);
+>>>>>>> REPLACE
+```
+
+After applying this change, try running the tests again with:
+
+```bash
+npm test
+```
+
+> Tokens: 30k sent, 435 received. Cost: $0.08 message, $0.08 session.  
+> src/database/seeds/user-seed.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+> Unable to find a fencing strategy! Falling back to: ```...```  
+
+Let's correct the code in `src/database/seeds/user-seed.ts` by removing the unnecessary `fs` and `path` imports and ensuring the JSON import is handled correctly.
+
+Here is the necessary change:
+
+src/database/seeds/user-seed.ts
+```typescript
+<<<<<<< SEARCH
+import path from "path";
+import sampleUsers from "./sample-users.json" assert { type: "json" };
+import PROJ_ENV from "../../config.js";
+
+const sampleUsersPath = path.resolve(__dirname, "sample-users.json");
+const sampleUsers = JSON.parse(readFileSync(sampleUsersPath, "utf-8"));
+=======
+import { MongoClient } from "mongodb";
+import PROJ_ENV from "../../config.js";
+import sampleUsers from "./sample-users.json" assert { type: "json" };
+>>>>>>> REPLACE
+```
+
+After applying this change, try running the tests again with:
+
+```bash
+npm test
+```
+
+> Tokens: 31k sent, 181 received. Cost: $0.08 message, $0.16 session.  
+> Applied edit to src/database/seeds/user-seed.ts  
+> Commit 644bb62 fix: remove unnecessary imports and fix JSON import in user-seed.ts  
+> npm test  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ npm test
+ error:
+ {"stack":"Error: Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31645:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31642:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m9111:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31443:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m26530:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n    at ChildProcess.<anonymous> (/Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/src/helpers/shell.ts:41:18)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/unit/database/user-seed.test.ts\u001b[2m [ tests/unit/database/user-seed.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Failed to parse JSON file, invalid JSON syntax found at position 174\u001b[39m\n  Plugin: \u001b[35mvite:json\u001b[39m\n  File: \u001b[36m/Users/prasanrajpurohit/Documents/repos/github/demo-code-genie/src/database/seeds/sample-users.json\u001b[39m:12:1\n\u001b[33m  10 |      \"age\": 25\n  11 |    }\n  12 |  ]\n     |   ^\n  13 |  [\n  14 |    {\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31645:43\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31642:14\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m TransformPluginContext.handler node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m9111:11\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m31443:51\u001b[22m\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m loadAndTransform node_modules/vite/dist/node/chunks/dep-eRCq8YxU.js:\u001b[2m26530:26\u001b[22m\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n"}
+</shell-commands-results>
+
