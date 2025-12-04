@@ -11,7 +11,7 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Develop utility functions in a Node.js TypeScript project to perform basic MongoDB operations: inserting JSON data and reading data by ID or filters. These functions should be integrated into the existing codebase, ensuring they are reusable and maintainable.",
+  "llmTaskExplanation": "Develop utility functions in a Node.js TypeScript project to perform basic MongoDB operations: inserting JSON data and reading data by ID or filters. These functions should be integrated into the existing codebase, ensuring they are reusable and maintainable. Follow best practices of Node.js, TypeScript, and Vitest.",
   "validations": [
     "Ensure JSON data is correctly formatted before insertion.",
     "Validate that the 'find by id' function returns the correct document or null if not found.",
@@ -56,16 +56,7 @@
       "assumption": "No existing MongoDB utility functions are present in the codebase."
     }
   ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the existing folder structure where these utility functions should be added?",
-      "answer":"Add in src/utils folder, also add package in package.json"
-    },
-    {
-      "question": "Are there any specific coding standards or guidelines to follow for this project?",
-      "answer":"best practices of node typescript vitest"
-    }
-  ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Creating utility functions for MongoDB insert and read operations.",
@@ -83,7 +74,11 @@
     {
       "path": "tests/utils/mongoUtils.test.ts",
       "rationale": "Add unit tests for the MongoDB utility functions."
+    },
+    {
+      "path": "src/utils",
+      "rationale": "Add in src/utils folder, also add package in package.json"
     }
   ],
-  "promptForAider": "Create utility functions in a Node.js TypeScript project for MongoDB operations: insert JSON data and read by ID or filters. Ensure functions are reusable and maintainable. Validate JSON format, handle errors, and write unit tests using Jest. Use MongoDB Node.js Driver and TypeScript. Sanitize inputs to prevent NoSQL injection and optimize queries for performance. Add logging for operations. Confirm folder structure and coding standards."
+  "promptForAider": "Create utility functions in a Node.js TypeScript project for MongoDB operations: insert JSON data and read by ID or filters. Ensure functions are reusable and maintainable. Validate JSON format, handle errors, and write unit tests using Vitest. Use MongoDB Node.js Driver and TypeScript. Sanitize inputs to prevent NoSQL injection and optimize queries for performance. Add logging for operations. Confirm folder structure and follow best practices of Node.js, TypeScript, and Vitest."
 }
