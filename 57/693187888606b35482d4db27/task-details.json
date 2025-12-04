@@ -1,0 +1,14 @@
+{
+  "taskId": 57,
+  "name": "[TASK]: Create a mongodb utility for simple insert and read operations",
+  "createdAt": "2025-12-04T13:06:22.000Z",
+  "updatedAt": "2025-12-04T13:06:39.000Z",
+  "allAssignees": [
+    "PrasanKumar93"
+  ],
+  "assignee": "PrasanKumar93",
+  "description": "### Task explanation\n\nutlity functions for MongoDB insert and read operations current node typescript project\n\n### Task validations\n\n- insert JSON \n- find by id\n- find by filters\n\n### Unit Test Cases\n\n_No response_\n\n### Task acceptance criteria\n\n- Able to insert some JSON and query on it \n\n### Task context files\n\n_No response_\n\n### Tech / Package Dependencies\n\n_No response_\n\n### Security & Performance\n\n_No response_\n\n### Other business context\n\n_No response_\n\n### Other notes\n\n_No response_\n\n### Checklist\n\n- [ ] Task documentation required\n- [ ] Task deployment required\n\n### Final Confirmation\n\n- [x] I confirm the spec is correct and ready for development. (Good context now means less time spent in code review later :)",
+  "taskStatus": "TODO",
+  "taskCategory": "",
+  "priority": ""
+}
