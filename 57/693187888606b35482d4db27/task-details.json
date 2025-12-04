@@ -58,10 +58,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the existing folder structure where these utility functions should be added?"
+      "question": "What is the existing folder structure where these utility functions should be added?",
+      "answer":"Add in src/utils folder, also add package in package.json"
     },
     {
-      "question": "Are there any specific coding standards or guidelines to follow for this project?"
+      "question": "Are there any specific coding standards or guidelines to follow for this project?",
+      "answer":"best practices of node typescript vitest"
     }
   ],
   "llmFileReferences": [],
