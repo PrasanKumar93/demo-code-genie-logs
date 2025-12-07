@@ -1019,3 +1019,257 @@ Run `npm audit` for details.
 
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-07 22:16:16
+
+> /Library/Frameworks/Python.framework/Versions/3.12/bin/aider --yes-always --message ## Feedback on Current Task Execution
+
+The following feedback has been provided for the current task. Please review the feedback carefully and make the necessary code changes to address it.
+
+**Note:** You can check the .aider.chat.history.md file to review previous code changes and execution logs for context.
+
+## Feedback:
+add method for update record by ID
+
+## Action Required:
+Please analyze the feedback above and implement the required changes to the codebase. Ensure your implementation:
+- Addresses all points mentioned in the feedback
+- Maintains code quality and follows existing patterns
+
+Proceed with the implementation now. docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 41 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### ## Feedback on Current Task Execution  
+####   
+#### The following feedback has been provided for the current task. Please review the feedback carefully and make the necessary code changes to address it.  
+####   
+#### **Note:** You can check the .aider.chat.history.md file to review previous code changes and execution logs for context.  
+####   
+#### ## Feedback:  
+#### add method for update record by ID  
+####   
+#### ## Action Required:  
+#### Please analyze the feedback above and implement the required changes to the codebase. Ensure your implementation:  
+#### - Addresses all points mentioned in the feedback  
+#### - Maintains code quality and follows existing patterns  
+####   
+#### Proceed with the implementation now.  
+
+To address the feedback, we will add a method to update a record by ID in the `src/utils/mongoUtils.ts` file. We will also add corresponding unit tests in `tests/utils/mongoUtils.test.ts`.
+
+Here are the changes:
+
+1. **Add `updateById` Method** in `src/utils/mongoUtils.ts`:
+
+src/utils/mongoUtils.ts
+```typescript
+<<<<<<< SEARCH
+export const findByFilters = async (collectionName: string, filters: object) => {
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(collectionName);
+    const documents = await collection.find(filters).toArray();
+    LoggerCls.info("Documents found by filters", documents);
+    return documents;
+  } catch (error) {
+    LoggerCls.error("Error finding documents by filters", error);
+    throw error;
+  }
+};
+=======
+export const findByFilters = async (collectionName: string, filters: object) => {
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(collectionName);
+    const documents = await collection.find(filters).toArray();
+    LoggerCls.info("Documents found by filters", documents);
+    return documents;
+  } catch (error) {
+    LoggerCls.error("Error finding documents by filters", error);
+    throw error;
+  }
+};
+
+export const updateById = async (collectionName: string, id: string, update: object) => {
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(collectionName);
+    const result = await collection.updateOne({ _id: new ObjectId(id) }, { $set: update });
+    LoggerCls.info("Document updated by ID", result);
+    return result;
+  } catch (error) {
+    LoggerCls.error("Error updating document by ID", error);
+    throw error;
+  }
+};
+>>>>>>> REPLACE
+```
+
+2. **Add Unit Tests for `updateById` Method** in `tests/utils/mongoUtils.test.ts`:
+
+tests/utils/mongoUtils.test.ts
+```typescript
+<<<<<<< SEARCH
+  it("should find documents by filters", async () => {
+    const document1 = { name: "FilterTest1", value: 1 };
+    const document2 = { name: "FilterTest2", value: 2 };
+    await insertDocument(collectionName, document1);
+    await insertDocument(collectionName, document2);
+    const foundDocuments = await findByFilters(collectionName, { value: { $gt: 0 } });
+    expect(foundDocuments.length).toBeGreaterThanOrEqual(2);
+  });
+=======
+  it("should find documents by filters", async () => {
+    const document1 = { name: "FilterTest1", value: 1 };
+    const document2 = { name: "FilterTest2", value: 2 };
+    await insertDocument(collectionName, document1);
+    await insertDocument(collectionName, document2);
+    const foundDocuments = await findByFilters(collectionName, { value: { $gt: 0 } });
+    expect(foundDocuments.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it("should update a document by ID", async () => {
+    const document = { name: "UpdateTest", value: 50 };
+    const insertResult = await insertDocument(collectionName, document);
+    const update = { value: 100 };
+    const updateResult = await updateById(collectionName, insertResult.insertedId.toString(), update);
+    expect(updateResult.modifiedCount).toBe(1);
+    const updatedDocument = await findById(collectionName, insertResult.insertedId.toString());
+    expect(updatedDocument.value).toBe(100);
+  });
+>>>>>>> REPLACE
+```
+
+After applying these changes, you can run the tests using the following command to ensure everything works correctly:
+
+```bash
+vitest run
+```
+
+> Tokens: 15k sent, 781 received. Cost: $0.04 message, $0.04 session.  
+> src/utils/mongoUtils.ts  
+> Add file to the chat? (Y)es/(N)o/(A)ll/(S)kip all/(D)on't ask again [Yes]: y  
+> tests/utils/mongoUtils.test.ts  
+> Add file to the chat? (Y)es/(N)o/(A)ll/(S)kip all/(D)on't ask again [Yes]: y  
+
+Let's add the `updateById` method to `src/utils/mongoUtils.ts` and corresponding unit tests in `tests/utils/mongoUtils.test.ts`.
+
+Here are the changes:
+
+1. **Add `updateById` Method** in `src/utils/mongoUtils.ts`:
+
+src/utils/mongoUtils.ts
+<code>typescript
+<<<<<<< SEARCH
+export const findByFilters = async (collectionName: string, filters: object) => {
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(collectionName);
+    const documents = await collection.find(filters).toArray();
+    LoggerCls.info("Documents found by filters", documents);
+    return documents;
+  } catch (error) {
+    LoggerCls.error("Error finding documents by filters", error);
+    throw error;
+  }
+};
+=======
+export const findByFilters = async (collectionName: string, filters: object) => {
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(collectionName);
+    const documents = await collection.find(filters).toArray();
+    LoggerCls.info("Documents found by filters", documents);
+    return documents;
+  } catch (error) {
+    LoggerCls.error("Error finding documents by filters", error);
+    throw error;
+  }
+};
+
+export const updateById = async (collectionName: string, id: string, update: object) => {
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(collectionName);
+    const result = await collection.updateOne({ _id: new ObjectId(id) }, { $set: update });
+    LoggerCls.info("Document updated by ID", result);
+    return result;
+  } catch (error) {
+    LoggerCls.error("Error updating document by ID", error);
+    throw error;
+  }
+};
+>>>>>>> REPLACE
+</code>
+
+2. **Add Unit Tests for `updateById` Method** in `tests/utils/mongoUtils.test.ts`:
+
+tests/utils/mongoUtils.test.ts
+<code>typescript
+<<<<<<< SEARCH
+  it("should find documents by filters", async () => {
+    const document1 = { name: "FilterTest1", value: 1 };
+    const document2 = { name: "FilterTest2", value: 2 };
+    await insertDocument(collectionName, document1);
+    await insertDocument(collectionName, document2);
+    const foundDocuments = await findByFilters(collectionName, { value: { $gt: 0 } });
+    expect(foundDocuments.length).toBeGreaterThanOrEqual(2);
+  });
+=======
+  it("should find documents by filters", async () => {
+    const document1 = { name: "FilterTest1", value: 1 };
+    const document2 = { name: "FilterTest2", value: 2 };
+    await insertDocument(collectionName, document1);
+    await insertDocument(collectionName, document2);
+    const foundDocuments = await findByFilters(collectionName, { value: { $gt: 0 } });
+    expect(foundDocuments.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it("should update a document by ID", async () => {
+    const document = { name: "UpdateTest", value: 50 };
+    const insertResult = await insertDocument(collectionName, document);
+    const update = { value: 100 };
+    const updateResult = await updateById(collectionName, insertResult.insertedId.toString(), update);
+    expect(updateResult.modifiedCount).toBe(1);
+    const updatedDocument = await findById(collectionName, insertResult.insertedId.toString());
+    expect(updatedDocument.value).toBe(100);
+  });
+>>>>>>> REPLACE
+</code>
+
+After applying these changes, you can run the tests using the following command to ensure everything works correctly:
+
+```bash
+vitest run
+```
+
+> Tokens: 17k sent, 774 received. Cost: $0.05 message, $0.10 session.  
+> Applied edit to tests/utils/mongoUtils.test.ts  
+> Applied edit to src/utils/mongoUtils.ts  
+> Commit 3b3ebc0 feat: add method to update record by ID in mongoUtils  
+> vitest run  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ vitest run
+ error:
+ {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID\nReferenceError: updateById is not defined\n ❯ tests/utils/mongoUtils.test.ts:49:26\n     47|     const insertResult = await insertDocument(collectionName, document…\n     48|     const update = { value: 100 };\n     49|     const updateResult = await updateById(collectionName, insertResult…\n       |                          ^\n     50|     expect(updateResult.modifiedCount).toBe(1);\n     51|     const updatedDocument = await findById(collectionName, insertResul…\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID\nReferenceError: updateById is not defined\n ❯ tests/utils/mongoUtils.test.ts:49:26\n     47|     const insertResult = await insertDocument(collectionName, document…\n     48|     const update = { value: 100 };\n     49|     const updateResult = await updateById(collectionName, insertResult…\n       |                          ^\n     50|     expect(updateResult.modifiedCount).toBe(1);\n     51|     const updatedDocument = await findById(collectionName, insertResul…\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n"}
+</shell-commands-results>
+
