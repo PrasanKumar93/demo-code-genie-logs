@@ -1273,3 +1273,219 @@ User has manually run below shell commands:
  {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID\nReferenceError: updateById is not defined\n ❯ tests/utils/mongoUtils.test.ts:49:26\n     47|     const insertResult = await insertDocument(collectionName, document…\n     48|     const update = { value: 100 };\n     49|     const updateResult = await updateById(collectionName, insertResult…\n       |                          ^\n     50|     expect(updateResult.modifiedCount).toBe(1);\n     51|     const updatedDocument = await findById(collectionName, insertResul…\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID\nReferenceError: updateById is not defined\n ❯ tests/utils/mongoUtils.test.ts:49:26\n     47|     const insertResult = await insertDocument(collectionName, document…\n     48|     const update = { value: 100 };\n     49|     const updateResult = await updateById(collectionName, insertResult…\n       |                          ^\n     50|     expect(updateResult.modifiedCount).toBe(1);\n     51|     const updatedDocument = await findById(collectionName, insertResul…\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n"}
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-07 22:16:39
+
+> /Library/Frameworks/Python.framework/Versions/3.12/bin/aider --yes-always --message Following shell commands execution failed (check .aider.chat.history.md file) :
+   command: vitest run
+ error: {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID\nReferenceError: updateById is not defined\n ❯ tests/utils/mongoUtils.test.ts:49:26\n     47|     const insertResult = await insertDocument(collectionName, document…\n     48|     const update = { value: 100 };\n     49|     const updateResult = await updateById(collectionName, insertResult…\n       |                          ^\n     50|     expect(updateResult.modifiedCount).toBe(1);\n     51|     const updatedDocument = await findById(collectionName, insertResul…\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID\nReferenceError: updateById is not defined\n ❯ tests/utils/mongoUtils.test.ts:49:26\n     47|     const insertResult = await insertDocument(collectionName, document…\n     48|     const update = { value: 100 };\n     49|     const updateResult = await updateById(collectionName, insertResult…\n       |                          ^\n     50|     expect(updateResult.modifiedCount).toBe(1);\n     51|     const updatedDocument = await findById(collectionName, insertResul…\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n"}
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 41 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### Following shell commands execution failed (check .aider.chat.history.md file) :  
+####    command: vitest run  
+####  error: {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID\nReferenceError: updateById is not defined\n ❯ tests/utils/mongoUtils.test.ts:49:26\n     47|     const insertResult = await insertDocument(collectionName, document…\n     48|     const update = { value: 100 };\n     49|     const updateResult = await updateById(collectionName, insertResult…\n       |                          ^\n     50|     expect(updateResult.modifiedCount).toBe(1);\n     51|     const updatedDocument = await findById(collectionName, insertResul…\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID\nReferenceError: updateById is not defined\n ❯ tests/utils/mongoUtils.test.ts:49:26\n     47|     const insertResult = await insertDocument(collectionName, document…\n     48|     const update = { value: 100 };\n     49|     const updateResult = await updateById(collectionName, insertResult…\n       |                          ^\n     50|     expect(updateResult.modifiedCount).toBe(1);\n     51|     const updatedDocument = await findById(collectionName, insertResul…\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n"}  
+> tests/utils/mongoUtils.test.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+
+The error indicates that the `updateById` function is not defined in the test file. This is likely because it was not imported. Let's fix this by importing the `updateById` function in the test file.
+
+Here is the necessary change:
+
+tests/utils/mongoUtils.test.ts
+<pre>typescript
+<<<<<<< SEARCH
+import { insertDocument, findById, findByFilters } from "../../src/utils/mongoUtils";
+=======
+import { insertDocument, findById, findByFilters, updateById } from "../../src/utils/mongoUtils";
+>>>>>>> REPLACE
+</pre>
+
+After applying this change, you can run the tests again using:
+
+```bash
+vitest run
+```
+
+> Tokens: 20k sent, 132 received. Cost: $0.05 message, $0.05 session.  
+> Applied edit to tests/utils/mongoUtils.test.ts  
+> Commit f85253c fix: import updateById function in mongoUtils test file  
+> vitest run  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ vitest run
+ output:
+ 
+ RUN  v3.2.4 /Users/prasanrajpurohit/Documents/repos/github/demo-code-genie
+
+stdout | tests/utils/mongoUtils.test.ts
+[dotenv@17.2.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+
+stdout | src/utils/logger/index.test.ts
+[dotenv@17.2.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+
+stdout | tests/utils/mongoUtils.test.ts
+[dotenv@17.2.1] injecting env (0) from .env.test -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+
+stdout | src/utils/logger/index.test.ts
+[dotenv@17.2.1] injecting env (0) from .env.test -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > getPureError > should handle complex objects in getPureError
+result {
+  message: [32m'Complex error'[39m,
+  stack: [32m'Error stack'[39m,
+  code: [33m500[39m,
+  nested: { property: [32m'value'[39m, array: [ [33m1[39m, [33m2[39m, [33m3[39m ] }
+}
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > log > should not throw when called with message
+Test log message
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > log > should not throw when called with message and details
+Test log message
+{
+    "test": "data"
+}
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > debug > should not throw when called with message
+Test debug message
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > debug > should not throw when called with message and details
+Test debug message
+{
+    "debug": "info"
+}
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > info > should not throw when called with message
+Test info message
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > info > should not throw when called with message and details
+Test info message
+{
+    "info": "data"
+}
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > error > should not throw when called with message
+Test error message
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > error > should not throw when called with message and details
+Test error message
+{
+    "error": "details"
+}
+
+ ✓ src/utils/logger/index.test.ts (14 tests) 9ms
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should insert a document
+Document inserted
+{
+    "acknowledged": true,
+    "insertedId": "6935af77bd535e59123d7c2c"
+}
+
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should find a document by ID
+Document inserted
+{
+    "acknowledged": true,
+    "insertedId": "6935af77bd535e59123d7c2d"
+}
+
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should find a document by ID
+Document found by ID
+{
+    "_id": "6935af77bd535e59123d7c2d",
+    "name": "FindById",
+    "value": 100
+}
+
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should find documents by filters
+Document inserted
+{
+    "acknowledged": true,
+    "insertedId": "6935af77bd535e59123d7c2e"
+}
+
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should find documents by filters
+Document inserted
+{
+    "acknowledged": true,
+    "insertedId": "6935af77bd535e59123d7c2f"
+}
+
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should find documents by filters
+Documents found by filters
+[
+    {
+        "_id": "6935af77bd535e59123d7c2c",
+        "name": "Test",
+        "value": 42
+    },
+    {
+        "_id": "6935af77bd535e59123d7c2d",
+        "name": "FindById",
+        "value": 100
+    },
+    {
+        "_id": "6935af77bd535e59123d7c2e",
+        "name": "FilterTest1",
+        "value": 1
+    },
+    {
+        "_id": "6935af77bd535e59123d7c2f",
+        "name": "FilterTest2",
+        "value": 2
+    }
+]
+
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID
+Document inserted
+{
+    "acknowledged": true,
+    "insertedId": "6935af77bd535e59123d7c30"
+}
+
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID
+Document updated by ID
+{
+    "acknowledged": true,
+    "modifiedCount": 1,
+    "upsertedId": null,
+    "upsertedCount": 0,
+    "matchedCount": 1
+}
+
+stdout | tests/utils/mongoUtils.test.ts > MongoDB Utility Functions > should update a document by ID
+Document found by ID
+{
+    "_id": "6935af77bd535e59123d7c30",
+    "name": "UpdateTest",
+    "value": 100
+}
+
+ ✓ tests/utils/mongoUtils.test.ts (4 tests) 99ms
+
+ Test Files  2 passed (2)
+      Tests  18 passed (18)
+   Start at  22:16:46
+   Duration  650ms (transform 56ms, setup 43ms, collect 153ms, tests 108ms, environment 0ms, prepare 153ms)
+
+
+</shell-commands-results>
+
