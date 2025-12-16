@@ -11,12 +11,13 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Develop a MongoDB utility in Node.js using TypeScript that provides simple insert and read operations. The utility should support inserting any JSON schema and provide methods for finding documents by ID and finding a single document based on a query.",
+  "llmTaskExplanation": "Develop a MongoDB utility in Node.js using TypeScript that provides simple insert and read operations. The utility should support inserting any JSON schema and provide methods for finding documents by ID and finding a single document based on a query. Handle duplicate ID errors by throwing an error.",
   "validations": [
     "Ensure the utility can insert any valid JSON object into the MongoDB collection.",
     "Validate that the findById method correctly retrieves a document by its ID.",
     "Ensure the findOne method can retrieve a single document based on a query object.",
-    "Check that the utility handles connection errors gracefully."
+    "Check that the utility handles connection errors gracefully.",
+    "Throw an error if a document with the same ID already exists."
   ],
   "unitTests": [
     "Test inserting a valid JSON object and verify it is stored correctly.",
@@ -24,13 +25,15 @@
     "Test findById with an invalid ID and verify it returns null or an appropriate error.",
     "Test findOne with a valid query and verify the correct document is returned.",
     "Test findOne with a query that matches no documents and verify it returns null or an appropriate error.",
-    "Test the utility's behavior when the MongoDB connection fails."
+    "Test the utility's behavior when the MongoDB connection fails.",
+    "Test inserting a document with a duplicate ID and verify that an error is thrown."
   ],
   "acceptanceCriteria": [
     "Given a valid JSON object, when it is inserted using the utility, then it should be stored in the MongoDB collection.",
     "Given a valid document ID, when findById is called, then the correct document should be returned.",
     "Given a valid query object, when findOne is called, then the correct document should be returned.",
-    "The utility should handle MongoDB connection errors without crashing."
+    "The utility should handle MongoDB connection errors without crashing.",
+    "Given a document with a duplicate ID, when it is inserted, then an error should be thrown."
   ],
   "technicalDependencies": [
     "mongodb",
@@ -52,18 +55,12 @@
     },
     {
       "assumption": "The MongoDB connection details are already configured elsewhere in the project."
-    }
-  ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the expected behavior if a document with the same ID already exists when attempting to insert?",
-      "answer":"throw error if id already exists"
     },
     {
-      "question": "Are there any specific JSON schemas that need to be supported or validated against?",
-      "answer":"not as of now"
+      "assumption": "No specific JSON schemas need to be supported or validated against at this time."
     }
   ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Developing a MongoDB utility for insert and read operations.",
@@ -79,5 +76,5 @@
       "rationale": "Create a new utility file to implement the MongoDB insert and read operations."
     }
   ],
-  "promptForAider": "Develop a MongoDB utility in Node.js using TypeScript for simple insert and read operations. Implement methods to insert any JSON schema and read it using findById and findOne methods. Ensure input data is sanitized and handle connection errors gracefully. Use the 'mongodb' package and ensure efficient query performance. Consider adding logging for operations. Address any open questions regarding duplicate IDs and specific JSON schema support."
+  "promptForAider": "Develop a MongoDB utility in Node.js using TypeScript for simple insert and read operations. Implement methods to insert any JSON schema and read it using findById and findOne methods. Ensure input data is sanitized and handle connection errors gracefully. Use the 'mongodb' package and ensure efficient query performance. Consider adding logging for operations. Handle duplicate ID errors by throwing an error."
 }
