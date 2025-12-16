@@ -673,3 +673,152 @@ You can now use this utility in your application to perform simple insert and re
 > Create new file? (Y)es/(N)o [Yes]: y  
 > Applied edit to src/utils/mongoUtility.ts  
 > Commit 4dc0cff feat: implement MongoDB utility for insert and read operations  
+
+# aider chat started at 2025-12-16 19:03:21
+
+> /Users/prasanrajpurohit/.local/bin/aider --yes-always --message ## Feedback on Current Task Execution
+
+The following feedback has been provided for the current task. Please review the feedback carefully and make the necessary code changes to address it.
+
+**Note:** You can check the .aider.chat.history.md file to review previous code changes and execution logs for context.
+
+## Feedback:
+add findOne, findMany method separately
+
+## Action Required:
+Please analyze the feedback above and implement the required changes to the codebase. Ensure your implementation:
+- Addresses all points mentioned in the feedback
+- Maintains code quality and follows existing patterns
+
+Proceed with the implementation now. docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 40 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### ## Feedback on Current Task Execution  
+####   
+#### The following feedback has been provided for the current task. Please review the feedback carefully and make the necessary code changes to address it.  
+####   
+#### **Note:** You can check the .aider.chat.history.md file to review previous code changes and execution logs for context.  
+####   
+#### ## Feedback:  
+#### add findOne, findMany method separately  
+####   
+#### ## Action Required:  
+#### Please analyze the feedback above and implement the required changes to the codebase. Ensure your implementation:  
+#### - Addresses all points mentioned in the feedback  
+#### - Maintains code quality and follows existing patterns  
+####   
+#### Proceed with the implementation now.  
+
+To address the feedback, we will separate the `findOne` and `findMany` methods in the `mongoUtility.ts` file. This will involve creating distinct functions for each operation. Here are the changes:
+
+1. Add a `findOneDocument` function to find a single document based on a query.
+2. Add a `findManyDocuments` function to find multiple documents based on a query.
+
+Here are the *SEARCH/REPLACE* blocks:
+
+src/utils/mongoUtility.ts
+<source>typescript
+<<<<<<< SEARCH
+export const readDocument = async (collectionName: string, query: object) => {
+=======
+export const findOneDocument = async (collectionName: string, query: object) => {
+>>>>>>> REPLACE
+</source>
+
+src/utils/mongoUtility.ts
+<source>typescript
+<<<<<<< SEARCH
+    const document = await db.collection(collectionName).findOne(query);
+    LoggerCls.info("Document read", document);
+    return document;
+=======
+    const result = await db.collection(collectionName).findOne(query);
+    LoggerCls.info("Document found", result);
+    return result;
+>>>>>>> REPLACE
+</source>
+
+src/utils/mongoUtility.ts
+<source>typescript
+<<<<<<< SEARCH
+=======
+export const findManyDocuments = async (collectionName: string, query: object) => {
+  try {
+    const db = await connectToDatabase();
+    const documents = await db.collection(collectionName).find(query).toArray();
+    LoggerCls.info("Documents found", documents);
+    return documents;
+  } catch (error) {
+    LoggerCls.error("Failed to find documents", error);
+    throw error;
+  }
+};
+>>>>>>> REPLACE
+</source>
+
+These changes will allow you to use `findOneDocument` for retrieving a single document and `findManyDocuments` for retrieving multiple documents based on a query.
+
+> Tokens: 12k sent, 361 received. Cost: $0.03 message, $0.03 session.  
+> src/utils/mongoUtility.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+
+Let's proceed with the changes to separate the `findOne` and `findMany` methods in the `src/utils/mongoUtility.ts` file. Here are the *SEARCH/REPLACE* blocks:
+
+src/utils/mongoUtility.ts
+<code>typescript
+<<<<<<< SEARCH
+export const readDocument = async (collectionName: string, query: object) => {
+=======
+export const findOneDocument = async (collectionName: string, query: object) => {
+>>>>>>> REPLACE
+</code>
+
+src/utils/mongoUtility.ts
+<code>typescript
+<<<<<<< SEARCH
+    const document = await db.collection(collectionName).findOne(query);
+    LoggerCls.info("Document read", document);
+    return document;
+=======
+    const result = await db.collection(collectionName).findOne(query);
+    LoggerCls.info("Document found", result);
+    return result;
+>>>>>>> REPLACE
+</code>
+
+src/utils/mongoUtility.ts
+<code>typescript
+<<<<<<< SEARCH
+=======
+export const findManyDocuments = async (collectionName: string, query: object) => {
+  try {
+    const db = await connectToDatabase();
+    const documents = await db.collection(collectionName).find(query).toArray();
+    LoggerCls.info("Documents found", documents);
+    return documents;
+  } catch (error) {
+    LoggerCls.error("Failed to find documents", error);
+    throw error;
+  }
+};
+>>>>>>> REPLACE
+</code>
+
+These changes will allow you to use `findOneDocument` for retrieving a single document and `findManyDocuments` for retrieving multiple documents based on a query.
+
+> Tokens: 13k sent, 314 received. Cost: $0.04 message, $0.07 session.  
+> Applied edit to src/utils/mongoUtility.ts  
+> Commit 209f5cf feat: separate findOne and findMany methods in mongoUtility.ts  
