@@ -842,3 +842,78 @@ User has manually run below shell commands:
  {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nMongoServerError: E11000 duplicate key error collection: dbSdlcGenie.testCollection index: _id_ dup key: { _id: ObjectId('6941a7b9116b64768971bbdf') }\n ❯ node_modules/mongodb/src/operations/insert.ts:85:25\n ❯ node_modules/mongodb/src/operations/command.ts:173:14\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nMongoServerError: E11000 duplicate key error collection: dbSdlcGenie.testCollection index: _id_ dup key: { _id: ObjectId('6941a7b9116b64768971bbdf') }\n ❯ node_modules/mongodb/src/operations/insert.ts:85:25\n ❯ node_modules/mongodb/src/operations/command.ts:173:14\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯\n\n"}
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-17 00:11:01
+
+> /Users/prasanrajpurohit/.local/bin/aider --yes-always --message Following shell commands execution failed (check .aider.chat.history.md file) :
+   command: vitest run
+ error: {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nMongoServerError: E11000 duplicate key error collection: dbSdlcGenie.testCollection index: _id_ dup key: { _id: ObjectId('6941a7b9116b64768971bbdf') }\n ❯ node_modules/mongodb/src/operations/insert.ts:85:25\n ❯ node_modules/mongodb/src/operations/command.ts:173:14\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nMongoServerError: E11000 duplicate key error collection: dbSdlcGenie.testCollection index: _id_ dup key: { _id: ObjectId('6941a7b9116b64768971bbdf') }\n ❯ node_modules/mongodb/src/operations/insert.ts:85:25\n ❯ node_modules/mongodb/src/operations/command.ts:173:14\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯\n\n"}
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 41 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### Following shell commands execution failed (check .aider.chat.history.md file) :  
+####    command: vitest run  
+####  error: {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nMongoServerError: E11000 duplicate key error collection: dbSdlcGenie.testCollection index: _id_ dup key: { _id: ObjectId('6941a7b9116b64768971bbdf') }\n ❯ node_modules/mongodb/src/operations/insert.ts:85:25\n ❯ node_modules/mongodb/src/operations/command.ts:173:14\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nMongoServerError: E11000 duplicate key error collection: dbSdlcGenie.testCollection index: _id_ dup key: { _id: ObjectId('6941a7b9116b64768971bbdf') }\n ❯ node_modules/mongodb/src/operations/insert.ts:85:25\n ❯ node_modules/mongodb/src/operations/command.ts:173:14\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯\n\n"}  
+> tests/mongodbUtility.test.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+
+The error you're encountering is due to attempting to insert a document with a duplicate `_id` into the MongoDB collection. This typically happens when the same test data is used multiple times without cleaning up the database between tests.
+
+To resolve this, we should ensure that the test collection is cleared before each test. Let's update the test file to include this step:
+
+tests/mongodbUtility.test.ts
+<pre>typescript
+<<<<<<< SEARCH
+beforeAll(async () => {
+  mongoUtil = new MongoDBUtility();
+  await mongoUtil.connect();
+});
+
+=======
+beforeAll(async () => {
+  mongoUtil = new MongoDBUtility();
+  await mongoUtil.connect();
+});
+
+beforeEach(async () => {
+  const db = mongoUtil.client.db(mongoUtil.dbName);
+  await db.collection(testCollection).deleteMany({});
+});
+>>>>>>> REPLACE
+</pre>
+
+This change will clear the `testCollection` before each test, preventing duplicate key errors. After applying this change, you can run the tests again using:
+
+```bash
+vitest run
+```
+
+> Tokens: 19k sent, 205 received. Cost: $0.05 message, $0.05 session.  
+> Applied edit to tests/mongodbUtility.test.ts  
+> Commit 2b8c313 test: clear test collection before each test to prevent duplicate key errors  
+> vitest run  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ vitest run
+ error:
+ {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts [ tests/mongodbUtility.test.ts ]\nReferenceError: beforeEach is not defined\n ❯ tests/mongodbUtility.test.ts:11:1\n      9| });\n     10| \n     11| beforeEach(async () => {\n       | ^\n     12|   const db = mongoUtil.client.db(mongoUtil.dbName);\n     13|   await db.collection(testCollection).deleteMany({});\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts [ tests/mongodbUtility.test.ts ]\nReferenceError: beforeEach is not defined\n ❯ tests/mongodbUtility.test.ts:11:1\n      9| });\n     10| \n     11| beforeEach(async () => {\n       | ^\n     12|   const db = mongoUtil.client.db(mongoUtil.dbName);\n     13|   await db.collection(testCollection).deleteMany({});\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n"}
+</shell-commands-results>
+
