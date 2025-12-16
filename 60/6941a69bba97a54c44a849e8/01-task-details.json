@@ -58,10 +58,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the expected structure of the JSON objects to be inserted?"
+      "question": "What is the expected structure of the JSON objects to be inserted?",
+      "answer":"any valid json"
     },
     {
-      "question": "Are there any specific MongoDB collections this utility should interact with?"
+      "question": "Are there any specific MongoDB collections this utility should interact with?",
+      "answer":"No as of now"
     }
   ],
   "llmFileReferences": [],
