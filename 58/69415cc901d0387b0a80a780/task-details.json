@@ -11,24 +11,27 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Develop a MongoDB utility in Node.js using TypeScript that provides simple insert and read operations. This utility should allow users to insert a document into a MongoDB collection and read a document from the collection.",
+  "llmTaskExplanation": "Develop a MongoDB utility in Node.js using TypeScript that provides simple insert and read operations. This utility should allow users to insert a document into a MongoDB collection and read a document from the collection. The documents should be any valid JSON, and the utility should handle any JSON schema generically.",
   "validations": [
     "Ensure the MongoDB connection is established before performing operations.",
     "Validate that the document to be inserted is not null or undefined.",
     "Ensure the read operation returns the correct document based on a given query.",
-    "Handle errors gracefully, such as connection failures or invalid queries."
+    "Handle errors gracefully, such as connection failures or invalid queries.",
+    "Validate that the document structure is a valid JSON."
   ],
   "unitTests": [
     "Test inserting a valid document into the database and verify it is stored correctly.",
     "Test reading a document that exists in the database and verify the correct document is returned.",
     "Test reading a document that does not exist and verify the operation returns null or an appropriate message.",
     "Test inserting a null or undefined document and verify the operation fails gracefully.",
-    "Test handling of MongoDB connection failures."
+    "Test handling of MongoDB connection failures.",
+    "Test inserting and reading documents with various JSON structures to ensure generic handling."
   ],
   "acceptanceCriteria": [
     "Given a valid document, when the user inserts it, then it should be stored in the MongoDB collection.",
     "Given a query for an existing document, when the user reads it, then the correct document should be returned.",
-    "Given a query for a non-existing document, when the user reads it, then the operation should return null or an appropriate message."
+    "Given a query for a non-existing document, when the user reads it, then the operation should return null or an appropriate message.",
+    "The utility should handle any valid JSON structure for documents."
   ],
   "technicalDependencies": [
     "mongodb",
@@ -52,16 +55,7 @@
       "assumption": "The MongoDB connection details will be provided via environment variables."
     }
   ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the expected structure of the documents to be inserted and read?",
-      "answer":"any valid JSON"
-    },
-    {
-      "question": "Are there any specific MongoDB collections or databases that should be used?",
-      "answer":"No , it should be generic method to handle any json schema"
-    }
-  ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Developing a MongoDB utility for insert and read operations.",
@@ -77,5 +71,5 @@
       "rationale": "Create a new utility file for MongoDB operations."
     }
   ],
-  "promptForAider": "Develop a MongoDB utility in Node.js using TypeScript for simple insert and read operations. Ensure the utility can insert a document into a MongoDB collection and read a document based on a query. Validate inputs, handle errors gracefully, and use environment variables for connection strings. Implement unit tests for insert and read operations, including edge cases. Optimize for performance and ensure security by sanitizing inputs."
+  "promptForAider": "Develop a MongoDB utility in Node.js using TypeScript for simple insert and read operations. Ensure the utility can insert a document into a MongoDB collection and read a document based on a query. Validate inputs, handle errors gracefully, and use environment variables for connection strings. Implement unit tests for insert and read operations, including edge cases. Optimize for performance and ensure security by sanitizing inputs. The utility should handle any valid JSON structure generically."
 }
