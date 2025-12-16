@@ -54,10 +54,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the expected structure of the documents to be inserted and read?"
+      "question": "What is the expected structure of the documents to be inserted and read?",
+      "answer":"any valid JSON"
     },
     {
-      "question": "Are there any specific MongoDB collections or databases that should be used?"
+      "question": "Are there any specific MongoDB collections or databases that should be used?",
+      "answer":"No , it should be generic method to handle any json schema"
     }
   ],
   "llmFileReferences": [],
