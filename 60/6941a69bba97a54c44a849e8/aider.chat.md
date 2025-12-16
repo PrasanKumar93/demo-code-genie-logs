@@ -980,3 +980,134 @@ User has manually run below shell commands:
  {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should insert a document\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nReferenceError: testCollection is not defined\n ❯ tests/mongodbUtility.test.ts:13:23\n     11| beforeEach(async () => {\n     12|   const db = mongoUtil.client.db(mongoUtil.dbName);\n     13|   await db.collection(testCollection).deleteMany({});\n       |                       ^\n     14| });\n     15| \n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should insert a document\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nReferenceError: testCollection is not defined\n ❯ tests/mongodbUtility.test.ts:13:23\n     11| beforeEach(async () => {\n     12|   const db = mongoUtil.client.db(mongoUtil.dbName);\n     13|   await db.collection(testCollection).deleteMany({});\n       |                       ^\n     14| });\n     15| \n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯\n\n"}
 </shell-commands-results>
 
+
+# aider chat started at 2025-12-17 00:11:45
+
+> /Users/prasanrajpurohit/.local/bin/aider --yes-always --message Following shell commands execution failed (check .aider.chat.history.md file) :
+   command: vitest run
+ error: {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should insert a document\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nReferenceError: testCollection is not defined\n ❯ tests/mongodbUtility.test.ts:13:23\n     11| beforeEach(async () => {\n     12|   const db = mongoUtil.client.db(mongoUtil.dbName);\n     13|   await db.collection(testCollection).deleteMany({});\n       |                       ^\n     14| });\n     15| \n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should insert a document\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nReferenceError: testCollection is not defined\n ❯ tests/mongodbUtility.test.ts:13:23\n     11| beforeEach(async () => {\n     12|   const db = mongoUtil.client.db(mongoUtil.dbName);\n     13|   await db.collection(testCollection).deleteMany({});\n       |                       ^\n     14| });\n     15| \n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯\n\n"}
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 41 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### Following shell commands execution failed (check .aider.chat.history.md file) :  
+####    command: vitest run  
+####  error: {"stack":"Error: Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should insert a document\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nReferenceError: testCollection is not defined\n ❯ tests/mongodbUtility.test.ts:13:23\n     11| beforeEach(async () => {\n     12|   const db = mongoUtil.client.db(mongoUtil.dbName);\n     13|   await db.collection(testCollection).deleteMany({});\n       |                       ^\n     14| });\n     15| \n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯\n\n\n    at ChildProcess.<anonymous> (file:///Users/prasanrajpurohit/Documents/repos/github/sdlc-genie-backend/packages/util-aider-cli/dist/helpers/shell.js:34:28)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)\n    at Process.callbackTrampoline (node:internal/async_hooks:130:17)","message":"Command failed with exit code 1: \n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should insert a document\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by ID\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find a document by filter\n FAIL  tests/mongodbUtility.test.ts > MongoDBUtility > should find multiple documents by filter\nReferenceError: testCollection is not defined\n ❯ tests/mongodbUtility.test.ts:13:23\n     11| beforeEach(async () => {\n     12|   const db = mongoUtil.client.db(mongoUtil.dbName);\n     13|   await db.collection(testCollection).deleteMany({});\n       |                       ^\n     14| });\n     15| \n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯\n\n"}  
+> tests/mongodbUtility.test.ts  
+> Add file to the chat? (Y)es/(N)o/(D)on't ask again [Yes]: y  
+
+The error you're encountering is because `testCollection` is not defined in the scope where it's being used. Let's fix this by defining `testCollection` at the top of the test file so it can be used throughout.
+
+Here is the necessary change:
+
+tests/mongodbUtility.test.ts
+<sourcecode>typescript
+<<<<<<< SEARCH
+let mongoUtil: MongoDBUtility;
+=======
+let mongoUtil: MongoDBUtility;
+const testCollection = "testCollection";
+>>>>>>> REPLACE
+</sourcecode>
+
+After applying this change, you can run the tests again using:
+
+```bash
+vitest run
+```
+
+> Tokens: 24k sent, 119 received. Cost: $0.06 message, $0.06 session.  
+> Applied edit to tests/mongodbUtility.test.ts  
+> Commit 7cc5327 fix: define testCollection to resolve ReferenceError in tests  
+> vitest run  
+> Run shell command? (Y)es/(N)o/(D)on't ask again [Yes]: n  
+
+#### Assistant:
+<shell-commands-results>
+User has manually run below shell commands:
+
+- command:
+ vitest run
+ output:
+ 
+ RUN  v3.2.4 /Users/prasanrajpurohit/Documents/repos/github/demo-code-genie
+
+stdout | tests/mongodbUtility.test.ts
+[dotenv@17.2.1] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+stdout | src/utils/logger/index.test.ts
+[dotenv@17.2.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+
+stdout | tests/mongodbUtility.test.ts
+[dotenv@17.2.1] injecting env (0) from .env.test -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+stdout | src/utils/logger/index.test.ts
+[dotenv@17.2.1] injecting env (0) from .env.test -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > getPureError > should handle complex objects in getPureError
+result {
+  message: [32m'Complex error'[39m,
+  stack: [32m'Error stack'[39m,
+  code: [33m500[39m,
+  nested: { property: [32m'value'[39m, array: [ [33m1[39m, [33m2[39m, [33m3[39m ] }
+}
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > log > should not throw when called with message
+Test log message
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > log > should not throw when called with message and details
+Test log message
+{
+    "test": "data"
+}
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > debug > should not throw when called with message
+Test debug message
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > debug > should not throw when called with message and details
+Test debug message
+{
+    "debug": "info"
+}
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > info > should not throw when called with message
+Test info message
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > info > should not throw when called with message and details
+Test info message
+{
+    "info": "data"
+}
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > error > should not throw when called with message
+Test error message
+
+stdout | src/utils/logger/index.test.ts > LoggerCls > error > should not throw when called with message and details
+Test error message
+{
+    "error": "details"
+}
+
+ ✓ src/utils/logger/index.test.ts (14 tests) 9ms
+ ✓ tests/mongodbUtility.test.ts (4 tests) 59ms
+
+ Test Files  2 passed (2)
+      Tests  18 passed (18)
+   Start at  00:11:55
+   Duration  613ms (transform 106ms, setup 66ms, collect 155ms, tests 67ms, environment 0ms, prepare 241ms)
+
+
+</shell-commands-results>
+
