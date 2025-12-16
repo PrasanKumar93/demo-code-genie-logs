@@ -1,0 +1,706 @@
+
+# aider chat started at 2025-12-16 23:17:08
+
+> /Users/prasanrajpurohit/.local/bin/aider --yes-always --message # TASK CONTEXT: [TASK]:  Create a mongodb utility for simple insert and read operations
+
+**Task ID**: #59
+
+---
+
+## TASK OVERVIEW
+
+**Description**: ### Task explanation
+
+Create a mongodb utility for simple insert and read operations
+
+### Task validations
+
+_No response_
+
+### Unit Test Cases
+
+_No response_
+
+### Task acceptance criteria
+
+- must be able to insert any JSON schema and read it , have separate findbyId , findOne methods
+
+### Task context files
+
+_No response_
+
+### Tech / Package Dependencies
+
+node js, typescript,
+
+### Security & Performance
+
+_No response_
+
+### Other business context
+
+_No response_
+
+### Other notes
+
+_No response_
+
+### Checklist
+
+- [ ] Task documentation required
+- [ ] Task deployment required
+
+### Final Confirmation
+
+- [ ] I confirm the spec is correct and ready for development. (Good context now means less time spent in code review later :)
+
+**Detailed Explanation**: 
+Develop a MongoDB utility in Node.js using TypeScript that provides simple insert and read operations. The utility should support inserting any JSON schema and provide methods for finding documents by ID and finding a single document based on a query. Handle duplicate ID errors by throwing an error.
+
+**Business Context**:
+This utility will simplify database operations for developers, allowing them to easily insert and retrieve data from MongoDB without dealing with low-level database interactions.
+
+**Aider instructions**:
+Develop a MongoDB utility in Node.js using TypeScript for simple insert and read operations. Implement methods to insert any JSON schema and read it using findById and findOne methods. Ensure input data is sanitized and handle connection errors gracefully. Use the 'mongodb' package and ensure efficient query performance. Consider adding logging for operations. Handle duplicate ID errors by throwing an error.
+
+---
+
+## SCOPE DEFINITION
+
+### IN SCOPE
+
+1. Developing a MongoDB utility for insert and read operations.
+2. Implementing findById and findOne methods.
+
+### OUT OF SCOPE
+
+1. Implementing complex query operations beyond simple findById and findOne.
+2. Handling MongoDB schema migrations.
+
+---
+
+## ACCEPTANCE CRITERIA
+
+1. Given a valid JSON object, when it is inserted using the utility, then it should be stored in the MongoDB collection.
+2. Given a valid document ID, when findById is called, then the correct document should be returned.
+3. Given a valid query object, when findOne is called, then the correct document should be returned.
+4. The utility should handle MongoDB connection errors without crashing.
+5. Given a document with a duplicate ID, when it is inserted, then an error should be thrown.
+
+---
+
+## TECHNICAL REQUIREMENTS
+
+### Dependencies & Technologies
+
+1. mongodb
+2. typescript
+
+### Validation Rules
+
+1. Ensure the utility can insert any valid JSON object into the MongoDB collection.
+2. Validate that the findById method correctly retrieves a document by its ID.
+3. Ensure the findOne method can retrieve a single document based on a query object.
+4. Check that the utility handles connection errors gracefully.
+5. Throw an error if a document with the same ID already exists.
+
+---
+
+
+## TECHNICAL ASSUMPTIONS
+
+1. The project uses Node.js and TypeScript as the primary tech stack.
+2. The MongoDB connection details are already configured elsewhere in the project.
+3. No specific JSON schemas need to be supported or validated against at this time.
+
+---
+
+## SUGGESTED FILE CHANGES
+
+
+1. **File**: `src/utils/mongodbUtility.ts`
+   **Rationale**: Create a new utility file to implement the MongoDB insert and read operations.
+
+---
+
+## ADDITIONAL NOTES
+
+Consider adding logging for database operations to aid in debugging and monitoring.
+
+---
+
+---
+
+## IMPLEMENTATION PLAN FROM PLANNING NODE
+
+The following comprehensive plan was created by the planning node. Follow this plan to implement the feature:
+
+### 1. CODEBASE ANALYSIS
+
+Since there are no specific reference files provided, I'll outline a general approach based on typical Node.js and TypeScript projects that use MongoDB. The utility will likely be a standalone module that can be imported and used in various parts of the application. The `mongodb` package will be used to interact with the MongoDB database.
+
+### 2. IMPLEMENTATION STRATEGY
+
+The goal is to create a MongoDB utility that provides simple insert and read operations. This utility will include methods for inserting any JSON schema, finding documents by ID, and finding a single document based on a query. The utility will handle connection errors gracefully and throw an error for duplicate ID insertions.
+
+### 3. COMPREHENSIVE STEP-BY-STEP IMPLEMENTATION PLAN
+
+**Step 1: Create MongoDB Utility File**
+- **File**: `src/utils/mongodbUtility.ts`
+- **Action**: Create a new file for the MongoDB utility.
+- **Details**: 
+  - Import necessary modules (`mongodb`, `dotenv` for environment variables).
+  - Set up a MongoDB client connection using connection details from environment variables.
+  - Export a class `MongoDBUtility` with methods for database operations.
+- **Rationale**: This file will encapsulate all MongoDB operations, making it reusable and maintainable.
+- **Addresses**: Provides a centralized utility for MongoDB operations.
+
+**Step 2: Implement Connection Handling**
+- **File**: `src/utils/mongodbUtility.ts`
+- **Action**: Implement connection logic.
+- **Details**: 
+  - Create a method to connect to the MongoDB database.
+  - Handle connection errors and log them.
+- **Rationale**: Ensures the utility can connect to the database and handle errors gracefully.
+- **Addresses**: Handles MongoDB connection errors without crashing.
+
+**Step 3: Implement Insert Method**
+- **File**: `src/utils/mongodbUtility.ts`
+- **Action**: Implement a method to insert documents.
+- **Details**: 
+  - Create an `insertDocument` method that takes a collection name and a JSON object.
+  - Use the `insertOne` method from the MongoDB client.
+  - Handle duplicate ID errors by checking for error codes and throwing a custom error.
+- **Rationale**: Allows insertion of any JSON schema into the database.
+- **Addresses**: Inserts valid JSON objects and handles duplicate ID errors.
+
+**Step 4: Implement FindById Method**
+- **File**: `src/utils/mongodbUtility.ts`
+- **Action**: Implement a method to find documents by ID.
+- **Details**: 
+  - Create a `findById` method that takes a collection name and an ID.
+  - Use the `findOne` method with an ID query.
+- **Rationale**: Provides a way to retrieve documents by their unique ID.
+- **Addresses**: Retrieves documents by ID.
+
+**Step 5: Implement FindOne Method**
+- **File**: `src/utils/mongodbUtility.ts`
+- **Action**: Implement a method to find a single document based on a query.
+- **Details**: 
+  - Create a `findOne` method that takes a collection name and a query object.
+  - Use the `findOne` method from the MongoDB client.
+- **Rationale**: Allows retrieval of a single document based on a query.
+- **Addresses**: Retrieves a single document based on a query.
+
+**Step 6: Add Logging for Operations**
+- **File**: `src/utils/mongodbUtility.ts`
+- **Action**: Implement logging for database operations.
+- **Details**: 
+  - Use a logging library or simple console logs to track operations.
+  - Log successful operations and errors.
+- **Rationale**: Aids in debugging and monitoring database operations.
+- **Addresses**: Provides visibility into database operations.
+
+### 4. VALIDATION STRATEGY
+
+- Ensure the utility can insert any valid JSON object into the MongoDB collection.
+- Validate that the `findById` method correctly retrieves a document by its ID.
+- Ensure the `findOne` method can retrieve a single document based on a query object.
+- Check that the utility handles connection errors gracefully.
+- Throw an error if a document with the same ID already exists.
+
+### 5. INTEGRATION POINTS
+
+- The utility will be imported and used in other parts of the application where database operations are needed.
+- Ensure the utility is compatible with existing database configurations and connection details.
+
+### 6. EDGE CASES & CONSIDERATIONS
+
+- Handle cases where the database connection fails.
+- Consider scenarios where the query does not match any documents.
+- Ensure proper error handling for all database operations.
+
+### 7. IMPLEMENTATION CONSTRAINTS
+
+- Focus ONLY on core feature implementation.
+- DO NOT include unit tests (handled separately).
+- Follow existing codebase conventions and patterns.
+- Ensure type safety and code quality.
+- Maintain backward compatibility where applicable.
+
+---
+
+
+## YOUR ROLE: EXECUTION NODE
+
+**THIS IS AN EXECUTION/DEVELOPMENT NODE**
+
+Your task is to implement the feature according to the comprehensive plan provided above.
+
+---
+
+## IMPORTANT CONSTRAINTS
+
+**THIS IS PURE DEVELOPMENT NODE ONLY**
+
+1. **Focus ONLY on Core Feature Implementation**
+   - Implement the feature functionality as described
+   - Ensure basic validation rules are in place
+   - Follow existing code patterns and conventions
+
+2. **DO NOT Include in This Phase**:
+   - Unit tests (handled by other node)
+
+3. **Code Quality Standards**:
+   - Follow existing codebase conventions and patterns
+   - Write clean, readable, maintainable code
+   - Add clear comments for complex logic
+   - Use descriptive variable and function names
+   - Ensure type safety 
+
+4. **Integration Requirements**:
+   - Ensure changes integrate seamlessly with existing code
+   - Maintain backward compatibility where applicable
+   - Update necessary imports and dependencies
+   - Follow the project's file structure and organization
+
+---
+
+## SUCCESS CRITERIA FOR THIS NODE
+
+Your implementation will be considered successful when:
+
+1. All acceptance criteria are addressed in the implementation
+2. All validation rules are enforced
+3. Code follows existing patterns and conventions
+4. Changes integrate properly with the existing codebase
+5. Basic functionality works as described
+6. No breaking changes to existing functionality
+7. All in-scope features are completed
+
+---
+
+## NEXT STEPS (Context for You)
+
+After you complete this pure development phase:
+- Other node will add comprehensive unit tests
+
+**Your focus now**: Deliver a working implementation of the core feature.
+
+---
+
+**Ready to start? Begin by:**
+1. Reading any reference files provided above
+2. Understanding the existing code structure
+3. Implementing the changes file by file
+4. Testing basic functionality manually
+ docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts docs/srs/srs-llms.md docs/technical/tech-stack.md docs/technical/folder-structure.md src/config.ts package.json vitest.config.ts vitest.setup.ts .aider.chat.history.md  
+> Using gpt-4o model with API key from environment.  
+> Aider v0.86.1  
+> Main model: gpt-4o with diff edit format  
+> Weak model: gpt-4o-mini  
+> Git repo: .git with 39 files  
+> Repo-map: using 4096 tokens, auto refresh  
+> Added .aider.chat.history.md to the chat.  
+> Added docs/srs/srs-llms.md to the chat.  
+> Added docs/technical/folder-structure.md to the chat.  
+> Added docs/technical/tech-stack.md to the chat.  
+> Added package.json to the chat.  
+> Added src/config.ts to the chat.  
+> Added vitest.config.ts to the chat.  
+> Added vitest.setup.ts to the chat.  
+
+#### # TASK CONTEXT: [TASK]:  Create a mongodb utility for simple insert and read operations  
+####   
+#### **Task ID**: #59  
+####   
+#### ---  
+####   
+#### ## TASK OVERVIEW  
+####   
+#### **Description**: ### Task explanation  
+####   
+#### Create a mongodb utility for simple insert and read operations  
+####   
+#### ### Task validations  
+####   
+#### _No response_  
+####   
+#### ### Unit Test Cases  
+####   
+#### _No response_  
+####   
+#### ### Task acceptance criteria  
+####   
+#### - must be able to insert any JSON schema and read it , have separate findbyId , findOne methods  
+####   
+#### ### Task context files  
+####   
+#### _No response_  
+####   
+#### ### Tech / Package Dependencies  
+####   
+#### node js, typescript,  
+####   
+#### ### Security & Performance  
+####   
+#### _No response_  
+####   
+#### ### Other business context  
+####   
+#### _No response_  
+####   
+#### ### Other notes  
+####   
+#### _No response_  
+####   
+#### ### Checklist  
+####   
+#### - [ ] Task documentation required  
+#### - [ ] Task deployment required  
+####   
+#### ### Final Confirmation  
+####   
+#### - [ ] I confirm the spec is correct and ready for development. (Good context now means less time spent in code review later :)  
+####   
+#### **Detailed Explanation**:   
+#### Develop a MongoDB utility in Node.js using TypeScript that provides simple insert and read operations. The utility should support inserting any JSON schema and provide methods for finding documents by ID and finding a single document based on a query. Handle duplicate ID errors by throwing an error.  
+####   
+#### **Business Context**:  
+#### This utility will simplify database operations for developers, allowing them to easily insert and retrieve data from MongoDB without dealing with low-level database interactions.  
+####   
+#### **Aider instructions**:  
+#### Develop a MongoDB utility in Node.js using TypeScript for simple insert and read operations. Implement methods to insert any JSON schema and read it using findById and findOne methods. Ensure input data is sanitized and handle connection errors gracefully. Use the 'mongodb' package and ensure efficient query performance. Consider adding logging for operations. Handle duplicate ID errors by throwing an error.  
+####   
+#### ---  
+####   
+#### ## SCOPE DEFINITION  
+####   
+#### ### IN SCOPE  
+####   
+#### 1. Developing a MongoDB utility for insert and read operations.  
+#### 2. Implementing findById and findOne methods.  
+####   
+#### ### OUT OF SCOPE  
+####   
+#### 1. Implementing complex query operations beyond simple findById and findOne.  
+#### 2. Handling MongoDB schema migrations.  
+####   
+#### ---  
+####   
+#### ## ACCEPTANCE CRITERIA  
+####   
+#### 1. Given a valid JSON object, when it is inserted using the utility, then it should be stored in the MongoDB collection.  
+#### 2. Given a valid document ID, when findById is called, then the correct document should be returned.  
+#### 3. Given a valid query object, when findOne is called, then the correct document should be returned.  
+#### 4. The utility should handle MongoDB connection errors without crashing.  
+#### 5. Given a document with a duplicate ID, when it is inserted, then an error should be thrown.  
+####   
+#### ---  
+####   
+#### ## TECHNICAL REQUIREMENTS  
+####   
+#### ### Dependencies & Technologies  
+####   
+#### 1. mongodb  
+#### 2. typescript  
+####   
+#### ### Validation Rules  
+####   
+#### 1. Ensure the utility can insert any valid JSON object into the MongoDB collection.  
+#### 2. Validate that the findById method correctly retrieves a document by its ID.  
+#### 3. Ensure the findOne method can retrieve a single document based on a query object.  
+#### 4. Check that the utility handles connection errors gracefully.  
+#### 5. Throw an error if a document with the same ID already exists.  
+####   
+#### ---  
+####   
+####   
+#### ## TECHNICAL ASSUMPTIONS  
+####   
+#### 1. The project uses Node.js and TypeScript as the primary tech stack.  
+#### 2. The MongoDB connection details are already configured elsewhere in the project.  
+#### 3. No specific JSON schemas need to be supported or validated against at this time.  
+####   
+#### ---  
+####   
+#### ## SUGGESTED FILE CHANGES  
+####   
+####   
+#### 1. **File**: `src/utils/mongodbUtility.ts`  
+####    **Rationale**: Create a new utility file to implement the MongoDB insert and read operations.  
+####   
+#### ---  
+####   
+#### ## ADDITIONAL NOTES  
+####   
+#### Consider adding logging for database operations to aid in debugging and monitoring.  
+####   
+#### ---  
+####   
+#### ---  
+####   
+#### ## IMPLEMENTATION PLAN FROM PLANNING NODE  
+####   
+#### The following comprehensive plan was created by the planning node. Follow this plan to implement the feature:  
+####   
+#### ### 1. CODEBASE ANALYSIS  
+####   
+#### Since there are no specific reference files provided, I'll outline a general approach based on typical Node.js and TypeScript projects that use MongoDB. The utility will likely be a standalone module that can be imported and used in various parts of the application. The `mongodb` package will be used to interact with the MongoDB database.  
+####   
+#### ### 2. IMPLEMENTATION STRATEGY  
+####   
+#### The goal is to create a MongoDB utility that provides simple insert and read operations. This utility will include methods for inserting any JSON schema, finding documents by ID, and finding a single document based on a query. The utility will handle connection errors gracefully and throw an error for duplicate ID insertions.  
+####   
+#### ### 3. COMPREHENSIVE STEP-BY-STEP IMPLEMENTATION PLAN  
+####   
+#### **Step 1: Create MongoDB Utility File**  
+#### - **File**: `src/utils/mongodbUtility.ts`  
+#### - **Action**: Create a new file for the MongoDB utility.  
+#### - **Details**:   
+####   - Import necessary modules (`mongodb`, `dotenv` for environment variables).  
+####   - Set up a MongoDB client connection using connection details from environment variables.  
+####   - Export a class `MongoDBUtility` with methods for database operations.  
+#### - **Rationale**: This file will encapsulate all MongoDB operations, making it reusable and maintainable.  
+#### - **Addresses**: Provides a centralized utility for MongoDB operations.  
+####   
+#### **Step 2: Implement Connection Handling**  
+#### - **File**: `src/utils/mongodbUtility.ts`  
+#### - **Action**: Implement connection logic.  
+#### - **Details**:   
+####   - Create a method to connect to the MongoDB database.  
+####   - Handle connection errors and log them.  
+#### - **Rationale**: Ensures the utility can connect to the database and handle errors gracefully.  
+#### - **Addresses**: Handles MongoDB connection errors without crashing.  
+####   
+#### **Step 3: Implement Insert Method**  
+#### - **File**: `src/utils/mongodbUtility.ts`  
+#### - **Action**: Implement a method to insert documents.  
+#### - **Details**:   
+####   - Create an `insertDocument` method that takes a collection name and a JSON object.  
+####   - Use the `insertOne` method from the MongoDB client.  
+####   - Handle duplicate ID errors by checking for error codes and throwing a custom error.  
+#### - **Rationale**: Allows insertion of any JSON schema into the database.  
+#### - **Addresses**: Inserts valid JSON objects and handles duplicate ID errors.  
+####   
+#### **Step 4: Implement FindById Method**  
+#### - **File**: `src/utils/mongodbUtility.ts`  
+#### - **Action**: Implement a method to find documents by ID.  
+#### - **Details**:   
+####   - Create a `findById` method that takes a collection name and an ID.  
+####   - Use the `findOne` method with an ID query.  
+#### - **Rationale**: Provides a way to retrieve documents by their unique ID.  
+#### - **Addresses**: Retrieves documents by ID.  
+####   
+#### **Step 5: Implement FindOne Method**  
+#### - **File**: `src/utils/mongodbUtility.ts`  
+#### - **Action**: Implement a method to find a single document based on a query.  
+#### - **Details**:   
+####   - Create a `findOne` method that takes a collection name and a query object.  
+####   - Use the `findOne` method from the MongoDB client.  
+#### - **Rationale**: Allows retrieval of a single document based on a query.  
+#### - **Addresses**: Retrieves a single document based on a query.  
+####   
+#### **Step 6: Add Logging for Operations**  
+#### - **File**: `src/utils/mongodbUtility.ts`  
+#### - **Action**: Implement logging for database operations.  
+#### - **Details**:   
+####   - Use a logging library or simple console logs to track operations.  
+####   - Log successful operations and errors.  
+#### - **Rationale**: Aids in debugging and monitoring database operations.  
+#### - **Addresses**: Provides visibility into database operations.  
+####   
+#### ### 4. VALIDATION STRATEGY  
+####   
+#### - Ensure the utility can insert any valid JSON object into the MongoDB collection.  
+#### - Validate that the `findById` method correctly retrieves a document by its ID.  
+#### - Ensure the `findOne` method can retrieve a single document based on a query object.  
+#### - Check that the utility handles connection errors gracefully.  
+#### - Throw an error if a document with the same ID already exists.  
+####   
+#### ### 5. INTEGRATION POINTS  
+####   
+#### - The utility will be imported and used in other parts of the application where database operations are needed.  
+#### - Ensure the utility is compatible with existing database configurations and connection details.  
+####   
+#### ### 6. EDGE CASES & CONSIDERATIONS  
+####   
+#### - Handle cases where the database connection fails.  
+#### - Consider scenarios where the query does not match any documents.  
+#### - Ensure proper error handling for all database operations.  
+####   
+#### ### 7. IMPLEMENTATION CONSTRAINTS  
+####   
+#### - Focus ONLY on core feature implementation.  
+#### - DO NOT include unit tests (handled separately).  
+#### - Follow existing codebase conventions and patterns.  
+#### - Ensure type safety and code quality.  
+#### - Maintain backward compatibility where applicable.  
+####   
+#### ---  
+####   
+####   
+#### ## YOUR ROLE: EXECUTION NODE  
+####   
+#### **THIS IS AN EXECUTION/DEVELOPMENT NODE**  
+####   
+#### Your task is to implement the feature according to the comprehensive plan provided above.  
+####   
+#### ---  
+####   
+#### ## IMPORTANT CONSTRAINTS  
+####   
+#### **THIS IS PURE DEVELOPMENT NODE ONLY**  
+####   
+#### 1. **Focus ONLY on Core Feature Implementation**  
+####    - Implement the feature functionality as described  
+####    - Ensure basic validation rules are in place  
+####    - Follow existing code patterns and conventions  
+####   
+#### 2. **DO NOT Include in This Phase**:  
+####    - Unit tests (handled by other node)  
+####   
+#### 3. **Code Quality Standards**:  
+####    - Follow existing codebase conventions and patterns  
+####    - Write clean, readable, maintainable code  
+####    - Add clear comments for complex logic  
+####    - Use descriptive variable and function names  
+####    - Ensure type safety   
+####   
+#### 4. **Integration Requirements**:  
+####    - Ensure changes integrate seamlessly with existing code  
+####    - Maintain backward compatibility where applicable  
+####    - Update necessary imports and dependencies  
+####    - Follow the project's file structure and organization  
+####   
+#### ---  
+####   
+#### ## SUCCESS CRITERIA FOR THIS NODE  
+####   
+#### Your implementation will be considered successful when:  
+####   
+#### 1. All acceptance criteria are addressed in the implementation  
+#### 2. All validation rules are enforced  
+#### 3. Code follows existing patterns and conventions  
+#### 4. Changes integrate properly with the existing codebase  
+#### 5. Basic functionality works as described  
+#### 6. No breaking changes to existing functionality  
+#### 7. All in-scope features are completed  
+####   
+#### ---  
+####   
+#### ## NEXT STEPS (Context for You)  
+####   
+#### After you complete this pure development phase:  
+#### - Other node will add comprehensive unit tests  
+####   
+#### **Your focus now**: Deliver a working implementation of the core feature.  
+####   
+#### ---  
+####   
+#### **Ready to start? Begin by:**  
+#### 1. Reading any reference files provided above  
+#### 2. Understanding the existing code structure  
+#### 3. Implementing the changes file by file  
+#### 4. Testing basic functionality manually  
+
+To implement the MongoDB utility for simple insert and read operations, we will create a new file `src/utils/mongodbUtility.ts`. This file will include methods for connecting to the MongoDB database, inserting documents, and retrieving documents by ID or query. Let's proceed with the implementation:
+
+src/utils/mongodbUtility.ts
+````typescript
+<<<<<<< SEARCH
+=======
+import { MongoClient, Db, ObjectId } from "mongodb";
+import PROJ_ENV from "../config";
+import { LoggerCls } from "../utils/logger";
+
+class MongoDBUtility {
+  private client: MongoClient;
+  private db: Db;
+
+  constructor() {
+    this.client = new MongoClient(PROJ_ENV.MONGO_URI as string);
+  }
+
+  async connect() {
+    try {
+      await this.client.connect();
+      this.db = this.client.db(PROJ_ENV.MONGO_DB_NAME);
+      LoggerCls.info("Connected to MongoDB");
+    } catch (error) {
+      LoggerCls.error("Failed to connect to MongoDB", error);
+      throw error;
+    }
+  }
+
+  async insertDocument(collectionName: string, document: any) {
+    try {
+      const collection = this.db.collection(collectionName);
+      const result = await collection.insertOne(document);
+      LoggerCls.info("Document inserted", result);
+      return result;
+    } catch (error) {
+      if (error.code === 11000) {
+        LoggerCls.error("Duplicate ID error", error);
+        throw new Error("Duplicate ID error");
+      }
+      LoggerCls.error("Failed to insert document", error);
+      throw error;
+    }
+  }
+
+  async findById(collectionName: string, id: string) {
+    try {
+      const collection = this.db.collection(collectionName);
+      const document = await collection.findOne({ _id: new ObjectId(id) });
+      LoggerCls.info("Document retrieved by ID", document);
+      return document;
+    } catch (error) {
+      LoggerCls.error("Failed to retrieve document by ID", error);
+      throw error;
+    }
+  }
+
+  async findOne(collectionName: string, query: object) {
+    try {
+      const collection = this.db.collection(collectionName);
+      const document = await collection.findOne(query);
+      LoggerCls.info("Document retrieved by query", document);
+      return document;
+    } catch (error) {
+      LoggerCls.error("Failed to retrieve document by query", error);
+      throw error;
+    }
+  }
+
+  async close() {
+    try {
+      await this.client.close();
+      LoggerCls.info("MongoDB connection closed");
+    } catch (error) {
+      LoggerCls.error("Failed to close MongoDB connection", error);
+      throw error;
+    }
+  }
+}
+
+export default MongoDBUtility;
+>>>>>>> REPLACE
+````
+
+### Explanation:
+1. **Connection Handling**: The `connect` method establishes a connection to the MongoDB database using the URI and database name from the environment configuration.
+2. **Insert Method**: The `insertDocument` method inserts a document into the specified collection and handles duplicate ID errors.
+3. **FindById Method**: The `findById` method retrieves a document by its ID using the `ObjectId` class.
+4. **FindOne Method**: The `findOne` method retrieves a single document based on a query object.
+5. **Logging**: The `LoggerCls` is used to log operations and errors for better debugging and monitoring.
+
+### Next Steps:
+- Ensure the `mongodb` package is installed in your project.
+- You can test the utility by importing it into your application and using the methods to interact with your MongoDB database.
+
+> Tokens: 13k sent, 713 received. Cost: $0.04 message, $0.04 session.  
+> src/utils/mongodbUtility.ts  
+> Create new file? (Y)es/(N)o [Yes]: y  
+> Applied edit to src/utils/mongodbUtility.ts  
+> Commit af1716a feat: implement MongoDB utility for insert and read operations  
