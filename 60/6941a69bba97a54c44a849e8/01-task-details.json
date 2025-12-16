@@ -11,7 +11,7 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Develop a MongoDB utility in Node.js using TypeScript that provides simple insert and read operations. The utility should be able to insert any JSON object into a MongoDB collection and support read operations such as findById, findByOne with a filter, and findMany.",
+  "llmTaskExplanation": "Develop a MongoDB utility in Node.js using TypeScript that provides simple insert and read operations. The utility should be able to insert any valid JSON object into a MongoDB collection and support read operations such as findById, findByOne with a filter, and findMany. No specific MongoDB collections are required.",
   "validations": [
     "Ensure JSON objects are correctly inserted into the MongoDB collection.",
     "Validate that findById returns the correct document based on the provided ID.",
@@ -56,16 +56,7 @@
       "assumption": "The project already uses Node.js and TypeScript."
     }
   ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the expected structure of the JSON objects to be inserted?",
-      "answer":"any valid json"
-    },
-    {
-      "question": "Are there any specific MongoDB collections this utility should interact with?",
-      "answer":"No as of now"
-    }
-  ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Developing the MongoDB utility with insert and read operations.",
@@ -85,5 +76,5 @@
       "rationale": "Add unit tests for the MongoDB utility functions."
     }
   ],
-  "promptForAider": "Develop a MongoDB utility in Node.js using TypeScript for simple insert and read operations. Ensure it can insert any JSON, findById, findByOne with a filter, and findMany. Validate JSON insertion, correct document retrieval by ID, and correct filtering. Use Node.js, TypeScript, and MongoDB Node.js Driver. Sanitize inputs and handle errors. Optimize for performance. Write unit tests for all operations. Consider logging for debugging. Clarify JSON structure and target collections."
+  "promptForAider": "Develop a MongoDB utility in Node.js using TypeScript for simple insert and read operations. Ensure it can insert any valid JSON, findById, findByOne with a filter, and findMany. Validate JSON insertion, correct document retrieval by ID, and correct filtering. Use Node.js, TypeScript, and MongoDB Node.js Driver. Sanitize inputs and handle errors. Optimize for performance. Write unit tests for all operations. Consider logging for debugging. No specific MongoDB collections are required."
 }
