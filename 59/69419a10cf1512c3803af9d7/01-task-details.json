@@ -56,10 +56,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the expected behavior if a document with the same ID already exists when attempting to insert?"
+      "question": "What is the expected behavior if a document with the same ID already exists when attempting to insert?",
+      "answer":"throw error if id already exists"
     },
     {
-      "question": "Are there any specific JSON schemas that need to be supported or validated against?"
+      "question": "Are there any specific JSON schemas that need to be supported or validated against?",
+      "answer":"not as of now"
     }
   ],
   "llmFileReferences": [],
