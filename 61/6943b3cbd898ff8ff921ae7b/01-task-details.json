@@ -10,5 +10,70 @@
   "description": "### Task explanation\n\nCreate a mongodb utility for simple insert and read operations\n\n### Task validations\n\n_No response_\n\n### Unit Test Cases\n\n_No response_\n\n### Task acceptance criteria\n\n- in read make separate findOne findMany methods\n\n### Task context files\n\n_No response_\n\n### Tech / Package Dependencies\n\nnode typescript\n\n### Security & Performance\n\n_No response_\n\n### Other business context\n\n_No response_\n\n### Other notes\n\n_No response_\n\n### Checklist\n\n- [ ] Task documentation required\n- [ ] Task deployment required\n\n### Final Confirmation\n\n- [ ] I confirm the spec is correct and ready for development. (Good context now means less time spent in code review later :)",
   "taskStatus": "TODO",
   "taskCategory": "",
-  "priority": ""
+  "priority": "",
+  "llmTaskExplanation": "Develop a MongoDB utility in a Node.js and TypeScript environment that provides simple insert and read operations. The utility should include separate methods for 'findOne' and 'findMany' operations.",
+  "validations": [
+    "Ensure the MongoDB connection is established before performing operations.",
+    "Validate that the data to be inserted is in the correct format and contains all required fields.",
+    "Ensure 'findOne' returns a single document or null if not found.",
+    "Ensure 'findMany' returns an array of documents, which can be empty if no documents match the query."
+  ],
+  "unitTests": [
+    "Test inserting a valid document and verify it is stored correctly.",
+    "Test inserting an invalid document and expect an error.",
+    "Test 'findOne' with a query that matches a document and verify the correct document is returned.",
+    "Test 'findOne' with a query that matches no documents and verify null is returned.",
+    "Test 'findMany' with a query that matches multiple documents and verify all matching documents are returned.",
+    "Test 'findMany' with a query that matches no documents and verify an empty array is returned."
+  ],
+  "acceptanceCriteria": [
+    "Given a valid document, when it is inserted, then it should be retrievable from the database.",
+    "Given a query, when 'findOne' is called, then it should return the first matching document or null.",
+    "Given a query, when 'findMany' is called, then it should return all matching documents or an empty array."
+  ],
+  "technicalDependencies": [
+    "mongodb",
+    "typescript"
+  ],
+  "security": [
+    "Ensure input data is sanitized to prevent injection attacks.",
+    "Implement error handling to manage database connection issues."
+  ],
+  "performance": [
+    "Optimize database queries to ensure efficient read operations."
+  ],
+  "businessContext": "This utility will simplify database operations for developers, allowing them to focus on business logic rather than database interactions.",
+  "otherNotes": "Consider adding logging for database operations to aid in debugging and monitoring.",
+  "llmAssumptions": [
+    {
+      "assumption": "The project uses Node.js and TypeScript as indicated by the task description."
+    },
+    {
+      "assumption": "The MongoDB utility will be a standalone module or service within the project."
+    }
+  ],
+  "llmOpenQuestions": [
+    {
+      "question": "What is the expected structure of the documents to be inserted into the database?"
+    },
+    {
+      "question": "Are there any specific fields that should be indexed for performance optimization?"
+    }
+  ],
+  "llmFileReferences": [],
+  "inScope": [
+    "Developing a MongoDB utility for insert and read operations.",
+    "Implementing 'findOne' and 'findMany' methods."
+  ],
+  "outOfScope": [
+    "Implementing complex query operations beyond simple findOne and findMany.",
+    "Handling database migrations or schema changes."
+  ],
+  "suggestedFileChanges": [
+    {
+      "path": "src/utils/mongodbUtility.ts",
+      "rationale": "Create a new utility file to encapsulate MongoDB operations."
+    }
+  ],
+  "promptForAider": "Create a MongoDB utility in Node.js and TypeScript for simple insert and read operations. Implement separate 'findOne' and 'findMany' methods. Ensure input validation and error handling are in place. Use the 'mongodb' package. Write unit tests to cover valid and invalid cases for insert, findOne, and findMany operations."
 }
