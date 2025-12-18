@@ -11,7 +11,7 @@
   "taskStatus": "TODO",
   "taskCategory": "",
   "priority": "",
-  "llmTaskExplanation": "Develop a MongoDB utility in a Node.js and TypeScript environment that provides simple insert and read operations. The utility should include separate methods for 'findOne' and 'findMany' operations.",
+  "llmTaskExplanation": "Develop a MongoDB utility in a Node.js and TypeScript environment that provides simple insert and read operations. The utility should include separate methods for 'findOne' and 'findMany' operations. The documents to be inserted can be any JSON structure, and no specific fields need to be indexed for performance optimization.",
   "validations": [
     "Ensure the MongoDB connection is established before performing operations.",
     "Validate that the data to be inserted is in the correct format and contains all required fields.",
@@ -50,18 +50,15 @@
     },
     {
       "assumption": "The MongoDB utility will be a standalone module or service within the project."
-    }
-  ],
-  "llmOpenQuestions": [
-    {
-      "question": "What is the expected structure of the documents to be inserted into the database?",
-      "answer":"any json"
     },
     {
-      "question": "Are there any specific fields that should be indexed for performance optimization?",
-      "answer":"no"
+      "assumption": "The documents to be inserted can be any JSON structure."
+    },
+    {
+      "assumption": "No specific fields need to be indexed for performance optimization."
     }
   ],
+  "llmOpenQuestions": [],
   "llmFileReferences": [],
   "inScope": [
     "Developing a MongoDB utility for insert and read operations.",
@@ -77,5 +74,5 @@
       "rationale": "Create a new utility file to encapsulate MongoDB operations."
     }
   ],
-  "promptForAider": "Create a MongoDB utility in Node.js and TypeScript for simple insert and read operations. Implement separate 'findOne' and 'findMany' methods. Ensure input validation and error handling are in place. Use the 'mongodb' package. Write unit tests to cover valid and invalid cases for insert, findOne, and findMany operations."
+  "promptForAider": "Create a MongoDB utility in Node.js and TypeScript for simple insert and read operations. Implement separate 'findOne' and 'findMany' methods. Ensure input validation and error handling are in place. Use the 'mongodb' package. Write unit tests to cover valid and invalid cases for insert, findOne, and findMany operations. The documents to be inserted can be any JSON structure, and no specific fields need to be indexed for performance optimization."
 }
