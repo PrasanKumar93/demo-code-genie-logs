@@ -54,10 +54,12 @@
   ],
   "llmOpenQuestions": [
     {
-      "question": "What is the expected structure of the documents to be inserted into the database?"
+      "question": "What is the expected structure of the documents to be inserted into the database?",
+      "answer":"any json"
     },
     {
-      "question": "Are there any specific fields that should be indexed for performance optimization?"
+      "question": "Are there any specific fields that should be indexed for performance optimization?",
+      "answer":"no"
     }
   ],
   "llmFileReferences": [],
